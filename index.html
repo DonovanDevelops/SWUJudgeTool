@@ -1,14 +1,3 @@
-<!--
-    There are two things that need to be run to update this offline tool:
-    1. update_cards.py
-        - Running this file generates a new cards_data.js file, which is what the page uses to
-        populate the information on the Cards and Additional Rulings tabs.
-    2. All of the child elements in #updatePolicyInsideHere
-        - The elements in this div for the Policy Clarifications are just inspector copy element from
-        https://nexus.cascadegames.com/resources/Policy_Clarifications/. Inspecting the page and copying the first child div inside the main element
-        (the one with class="container"), right click on the element in the inspector, then click "Copy", then "Copy element" and paste it inside
-        #updatePolicyInsideHere, overwriting the existing content.
--->
 <html>
     <head>
         <title>Star Wars: Unlimited Offline Judge Tool</title>
@@ -22,40 +11,40 @@
         <div class="stickyContent">
             <h1>Star Wars: Unlimited Judge Tool</h1>
             <nav>
-                <div id="cardDataTab" class="activeTab" onclick="$('contentContainer').hide();$('#cardDataContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Cards</div>
-                <div id="ruleDataTab" onclick="$('contentContainer').hide(); $('#ruleDataContainer').show(); $(this).addClass('activeTab'); $('#cardDataTab').removeClass('activeTab');">Additional Rulings</div>
-                <div id="crDataTab" onclick="$('contentContainer').hide();$('#crContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">CR</div>
-                <div id="medDataTab" onclick="$('contentContainer').hide();$('#medContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">MED</div>
-                <div id="trDataTab" onclick="$('contentContainer').hide();$('#trContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">TR</div>
-                <div id="clarificationDataTab" onclick="$('contentContainer').hide();$('#ruleClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Rules Clarifications</div>
-                <div id="policyDataTab" onclick="$('contentContainer').hide();$('#policyClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Policy Clarifications</div>
+                <div id="cardDataTab" class="activeTab" onclick="$('.contentContainer').hide();$('#cardDataContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Cards</div>
+                <div id="ruleDataTab" onclick="$('.contentContainer').hide(); $('#ruleDataContainer').show(); $(this).addClass('activeTab'); $('#cardDataTab').removeClass('activeTab');">Additional Rulings</div>
+                <div id="crDataTab" onclick="$('.contentContainer').hide();$('#crContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">CR</div>
+                <div id="medDataTab" onclick="$('.contentContainer').hide();$('#medContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">MED</div>
+                <div id="trDataTab" onclick="$('.contentContainer').hide();$('#trContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">TR</div>
+                <div id="clarificationDataTab" onclick="$('.contentContainer').hide();$('#ruleClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Rules Clarifications</div>
+                <div id="policyDataTab" onclick="$('.contentContainer').hide();$('#policyClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Policy Clarifications</div>
             </nav>
             <search>
                 <input type="text" id="searchInput" placeholder="Search in Cards and Additional Rulings..." oninput="updateSearch();">
             </search>
         </div>
-        <content>
-            <contentContainer id="cardDataContainer">
+        <div class="content">
+            <div class="contentContainer" id="cardDataContainer">
                 <div class="sectionDescription">This is a list of all cards alphabetically. Select a card to view its images, text, and known rulings.</div>
                 <div class="sectionContent" id="cardContent"></div> 
-            </contentContainer>
-            <contentContainer id="ruleDataContainer" style="display: none;">
+            </div>
+            <div class="contentContainer" id="ruleDataContainer" style="display: none;">
                 <div class="sectionDescription">This is a list of all known additional rulings from the SWU website. Rules are grouped by set, then alphabetically by card name, then by date.</div>
                 <div class="sectionContent" id="ruleContent"></div> 
-            </contentContainer>
-            <contentContainer id="crContainer" style="display:none;">
+            </div>
+            <div class="contentContainer" id="crContainer" style="display:none;">
                 <embed src="https://cdn.starwarsunlimited.com//SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%">
-            </contentContainer>
-            <contentContainer id="medContainer" style="display:none;">
+            </div>
+            <div class="contentContainer" id="medContainer" style="display:none;">
                 <embed src="https://cdn.starwarsunlimited.com//Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%">
-            </contentContainer>
-            <contentContainer id="trContainer" style="display:none;">
+            </div>
+            <div class="contentContainer" id="trContainer" style="display:none;">
                 <embed src="https://cdn.starwarsunlimited.com//SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%">
-            </contentContainer>
-            <contentContainer id="ruleClarificationContainer" style="display:none;">
+            </div>
+            <div class="contentContainer" id="ruleClarificationContainer" style="display:none;">
                 <div>Coming Soon!</div>
-            </contentContainer>
-            <contentContainer id="policyClarificationContainer" style="display:none;">
+            </div>
+            <div class="contentContainer" id="policyClarificationContainer" style="display:none;">
                 <div id="updatePolicyInsideHere">
                     <div class="container">
                         <h2>Disclaimer</h2>
@@ -324,7 +313,7 @@
                         </p>
                               </div>
                 </div>
-            </contentContainer>
+            </div>
         </content>
         <style>
             html {
@@ -335,7 +324,6 @@
                 font-style: normal;
             }
             body {
-                max-width: 360px;
                 margin: auto;
                 background-color: #ffffff;
                 padding: 0;
@@ -477,8 +465,34 @@
             #ruleClarificationContainer h2, #ruleClarificationContainer h3, #policyClarificationContainer h2, #policyClarificationContainer h3 {
                 margin: 0;
             }
-            /* Custom Scrollbar CSS */
 
+            /* Responsive Styling */
+            @media screen and (max-width: 1024px) {
+                div.content {
+                    width: 768px;
+                    margin: auto;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                div.content {
+                    width: 480px;
+                    margin: auto;
+                }
+            }
+            @media screen and (max-width: 480px) {
+                div.content {
+                    width: 360px;
+                    margin: auto;
+                }
+            }
+            @media screen and (min-width: 1024px) {
+                div.content {
+                    width: 1024px;
+                    margin: auto;
+                }
+            }
+
+            /* Custom Scrollbar CSS */
             /* Scrollbar */
             ::-webkit-scrollbar {
                 width: 6px;
@@ -690,9 +704,6 @@
                     markdownLines.push(fixedMd);
                 }
 
-
-                console.log(mdSplit);
-                console.log(markdownLines);
                 return markdownLines.join('');
             }
 
@@ -702,7 +713,6 @@
             .then(response => response.json())
             .then(result => {
                 if (result.files["SWU_Resources.md"]["content"] !== undefined && result.files["SWU_Resources.md"]["content"] !== null) {
-                    console.log(result.files["SWU_Resources.md"]);
                     const markdownContent = result.files["SWU_Resources.md"]["content"];
 
                     const fixedMd = fixMarkdown(markdownContent);
