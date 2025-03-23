@@ -1,0 +1,1536 @@
+1 
+ Fantasy Flight Games Master Event Document  
+Last Updated 3/14/2025 
+Version 1.2 
+Notable changes from the previous version are marked in blue. 
+ 
+Fantasy Flight Games Organized Play (FFG OP) takes many forms  across multiple games. This 
+document serves as a foundation that other, game -specific event regulations can build upon . It 
+also serves as a rules compendium that applies to all official FFG OP events.  
+ 
+This document is divided into two parts : Event Guidelines  and Floor Rules . 
+ 
+In Part 1:  Event Guidelines , readers will find fundamental information  about how FFG OP 
+events are run , as well as definitions for  several terms that are referenced across all FFG OP 
+documentation. All organizers of official FFG OP events are expected to be familiar with 
+this section . Participants in these events are also encouraged to read this section to better 
+understand the “ins and outs” of Organized Play. The Event Guidelines section begins on page 4. 
+ 
+In Part 2:  Floor Rules , readers will find  the code of conduct, behavioral expectations, and 
+penalty guidelines of FFG OP events. All staff members, participants, and attendees of FFG 
+OP events are required to adhere to the rules described in this section.  Failure to do so can 
+result in the revocation of FFG OP privileges from an organizer or player. The Floor Rules 
+section begins on page 15. 
+ 
+At the end of this document are two Appendices . These exist to serve as quick -reference guides 
+for use throughout an event ; they are not substitutions for the more detailed information found 
+throughout this document.  
+ 
+Disclaimer : This Master Event Document is not intended to address all local laws and 
+regulations and is intended as a guide and best practices for Organized Play events with 
+mandatory Floor Rules for FFG OP events, that still allow for some discretion. Each Event 
+Organizer should be familiar with local laws and regulations and should adjust accordingly in 
+order to be in compliance with them if there is a confli ct with this document. FFG disclaims any 
+responsibility for such compliance.  
+ 
+FFG reserves the right to update this document at any time.  
+ 
+  2 
+ Table of Contents  
+ 
+Part 1: Event Guidelines  
+1. General Event Concepts  
+1. Event Outline  
+2. Official, Unofficial, and Unsanctioned Events  
+3. Event Tiers  
+A. Casual Tier  
+B. Competitive Tier  
+4. Event Types  
+A. Weekly Play  
+B. Tournament  
+5. Prize Distribution  
+2. Event Participant Roles  
+1. Eligible Participants  
+2. Leader Roles  
+A. Event Organizer  
+B. Head Judge  
+C. Floor Judge  
+D. Scorekeeper  
+E. Additional Event Staff  
+3. Players  
+4. Spectators  
+A. On-Site Spectators  
+B. Digital Spectators  
+C. Influencers and Media  
+5. Performing Multiple Roles  
+3. Tournaments  
+1. Tournament Structure  
+2. Tournament Round Mechanics  
+A. Swiss Rounds  
+B. Elimination Rounds  
+C. Progression Cut  
+D. Bye 
+Part 2: Floor Rules  
+1. Philosophy and General Guidelines  
+1. The Role of a Judge  
+2. Penalty Definitions  
+A. Point Penalties  
+B. Game Loss and Match Loss  
+C. Disqualification  
+2. Gameplay Disruptions  
+1. What Defines a Gameplay Disruption  3 
+ 2. Missed Mandatory Abilities  
+3. Missed Game Steps  
+4. Inaccurate Gameplay  
+5. Repeated Gameplay Disruptions  
+3. Event Disruptions  
+1. What Defines an Event Disruption  
+2. Tardiness and Absences  
+3. Errors with Deck Lists  
+4. Marked Cards  
+5. Card Manipulation Errors  
+6. Slow Play  
+7. Hygiene  
+8. Unsporting Conduct  
+A. Basic Expectations  
+B. Minor Unsporting Conduct: Inappropriate Behavior  
+C. Major Unsporting Conduct: Harassment  
+D. Aggressive Behavior  
+E. Bribery and Collusion  
+F. Stalling  
+G. Vandalism and Theft  
+H. Cheating  
+4. Time Extensions  
+Appendix: Warning Guidelines  
+ 4 
+ Part 1: E vent Guidelines  
+ 
+1. General Event Concepts  
+The following are commonly used  terms  and concepts  when engaging with Fantasy Flight 
+Games Organized Play events:  
+ 
+1.1 Event Outline  
+FFG OP designs events and products to create a memorable experience for the intended player 
+community. An Event Outline provides the guidance necessary to run an event that delivers that 
+experience. All official FFG OP events have an Event Outline provided as part of  their associated 
+Organized Play kits. Some FFG OP products have more than one Event Outline, offering Event 
+Organizers the choice of which to use.  
+ 
+Each Event Outline include s the following information : 
+• Instructions for the distribution of the FFG prize product  
+• The tier of the event (Casual or Competitive)  
+• The event’s tournament structure (if it uses one)  
+• Requirements for staff roles to be fulfilled  
+• Description of the utilized variant rules (if applicable)  
+ 
+1.2 Official , Unofficial , and Unsanctioned  Events  
+Official  events are those which have an Event Outline  (see above)  published and provided by 
+FFG OP. This includes seasonal Weekly Play and official Casual and Competitive series events.  
+ 
+Unofficial  events are those without an Event Outline. This includes both events that do not 
+utilize an FFG OP product and events that utilize a non -championship FFG OP product without 
+an Event Outline. FFG strongly recommends that Event Organizers of unofficial events 
+communicate their event’s details to participants by utilizing the event tiers and structures 
+defined in this document.  
+ 
+Unsanctioned  events are events run by someone who does not have authorization from FFG to 
+create an event using FFG’s official event software , or by someone running an event using a 
+method or location that is not approved or supported by FFG.  
+ 
+1.3 Event Tiers  
+There are two tiers of FFG OP events: Casual  events and Competitive  events.  These tiers serve 
+to establish the expectations of the event. The tiers are not intended to exclude people from 
+participating, but rather are meant to communicate the experience that players can expect from 
+the event. Official events, including tournaments, will be categorized as one of these two tiers. 
+Unofficial events  are always considered to be  Casual -tier even ts. 
+ 5 
+ 1.3-A. Casual Tier  
+Events at this tier are welcoming to all players, regardless of experience level. The focus of 
+Casual events is on creating a fun and friendly environment where new players can learn and 
+enjoy the game alongside long -time veterans. Weekly Play Nights and store -level events that do 
+not award tournament points are considered Casual -tier events.  
+ 
+Even at Casual tournaments that award prizes for wins and/or placement, p articipants of these 
+events are expected to be welcoming and help each other learn  and improve at  the game.  
+ 
+1.3-B. Competitive Tier  
+Events at this tier expect players to possess at least moderate knowledge and experience of the 
+game in question. Players should be familiar with the game rules and the event  regulations , and 
+they should be prepared to exercise that knowledge to play at a reasonable pace. The focus of a 
+Competitive -tier event is a friendly, competitive, and fair environment. Larger -scale, official 
+FFG OP events that award tournament points are considered to be Competitive -tier events.  
+ 
+1.4 Event Types  
+Events serve primarily as a way to facilitate the game being played. Clear communication of the 
+event details to all participants is the best way to set expectations appropriately. The first step in 
+designing an event is deciding what type of event it is, based on its intended purpose.  
+ 
+1.4-A. Weekly Play  
+Meant to be a very inviting event with minimal structure, Weekly Play events typically consist of 
+only a scheduled time and location. The Event Organizer arranges for space to play, and players 
+are invited to attend and play at their leisure with opponents of their own choosing. Prizes given 
+away at Weekly Play events are typically based on players ’ engagement rather than their overall 
+performance.  
+ 
+1.4-B. Tournament  
+A tournament is a structured event in which players are paired against each other for multiple 
+rounds. Some tournaments feature a “top cut,” in which only certain players advance to further 
+rounds.  
+ 
+The tournament tier (Casual or Competitive) and structure should be properly communicated 
+when offering registration and before beginning the first round of play. Prizes are awarded in 
+tournaments based on  players’ overall performance.  
+ 
+1.5 Prize Distribution  
+It is important that events which offer prizes clearly define how those prizes are distributed  and 
+all local, state, and federal laws and regulations should be followed . The Event Outline of an 
+official event includes the minimum prize distribution , which must  be used. Event Organizers are 
+welcome to supplement the event with additional prizing.  6 
+  
+Event Organizers of unofficial events should clearly communicate the way that any prizes will be 
+awarded prior to enrolling players and then ensure that prizes are distributed in that exact 
+manner.  
+ 
+Prizes for tournaments should be awarded to appropriate players as they each conclude their 
+participation , even if the tournament has not yet ended. For example, if a prize is to be 
+distributed to the Top 32 players and there are only 32 players remaining, give that prize to every 
+player that drops from the tournament beyond that point. Similarly, if a prize is to be distributed 
+to the Top 4 players, only give that prize to players when the event has four or less players 
+remaining. At the end of the event, all remaining players should be awarded their appropriate 
+prizes.  
+ 
+Important Note:  Players who have been Disqualified  from an event forfeit any and all prizes 
+they would have earned  from their placement . More information about Disqualifications can be 
+found later in this document in Part 2: Floor Rules . 
+ 
+2. Event Participant Roles  
+Every person that is part of an event is a participant. Participants are classified into roles based 
+on that person’s responsibilities . A participant’s failure to fulfill the responsibilities of their role 
+may violate the integrity of an event by disrupting a fair, safe, and inclusive environment. 
+Suspected violations may be subject to investigation at the discretion of FFG . All participants 
+share the responsibility of interacting with each other in a fair and respectful manner.  
+ 
+The different participant roles  are: 
+• Leaders  
+o Event  Organizer  
+o Judges  
+▪ Head Judge  
+▪ Floor Judge s 
+o Scorekeeper  (for tournaments)  
+o Additional Event Staff (optional)  
+▪ Event Manager  
+▪ Media  Staff  
+• Players  
+• Spectators  
+o On-Site Spectators  
+o Digital Spectators  
+o Influencers  and Media  
+ 7 
+ All official FFG OP events must have exactly one Event  Organizer . All Competitive -tier events 
+must also have at least one person in each of the non -optional Leader roles listed above , each of 
+whom should have demonstrated expertise in the game rules and event regulations .  
+ 
+Note that the Event Outline for an official event may dictate additional staffing requirements.  
+ 
+2.1 Eligible Participants  
+Eligibility to participate in an official Fantasy Flight Games Organized Play —whether as a 
+player, leader, or other role —is a privilege extended to all, with the following exceptions:  
+ 
+• The FFG Organized Play Suspension Policy includes a list of people for whom eligibility 
+has been revoked, and official Event Organizers are required to enforce those 
+suspensions.  
+• Employees of Fantasy Flight Games, Asmodee, and any of its subsidiaries  and affiliates  
+cannot participate as a player in official Competitive -tier events.  
+• Individuals prohibited from participating by applicable laws.  
+• Minors are ineligible to participate in FFG OP unless they have the permission of their 
+legal guardian. A minor and their guardian declare that this permission has been given by 
+allowing the minor to attempt to enroll in an event , however written releases may be 
+required . All local, state, and federal laws and regulations should be followed, including 
+prize eligibility.  
+• Other individuals deemed ineligible, at the sole discretion of Fantasy Flight Games.  
+ 
+Official FFG OP events must not restrict eligibility in any way other than those listed here unless 
+the Event Outline explicitly allows for it.  
+ 
+2.2 Leader Roles  
+Leaders  are the individuals who lead and manage an event. The leader roles are: Event 
+Organizer , Head Judge , Floor Judge , Scorekeeper , Event Manager , and Livestream Staff.  
+ 
+If unsure about an issue, leaders should consult the game rules and event regulations (especially 
+the Part 2: Floor Rules  section of this document) provided by FFG before making a decision.  
+Leaders should avoid any actions that could be misconstrued as introducing impropriety to the 
+event, such as favoritism, nepotism, or general unprofessionalism.  
+ 
+2.2-A. Event Organizer  (a.k.a. Tournament Organizer)  
+All events must have a single person designated as the Event Organizer. This person is ultimately 
+responsible for the entire event, including both planning and execution.  The Event Organizer 
+holds the following responsibilities:  
+ 
+• Providing or arranging for a location for the event.  
+• Obtaining all materials necessary for the execution of the event.  8 
+ • Publicizing the details of the event.  
+• Selecting people to fill other leader roles, if necessary.  
+• Maintaining the integrity of the event.  
+• Supervising the performance of other leaders.  
+• Arranging for the distribution of prizes.  
+• Resolving any unforeseen issues which may arise during the event.  
+• Being available at the event location throughout the entirety of the event.  
+o If required to leave for any reason, the Event Organizer must designate an Event 
+Manager to act in their stead until they return (see 2.2-E. Additional Event Staff  
+below).  
+• Overseeing the scorekeeping of the event and deciding how to repair scorekeeping errors  
+alongside the Scorekeeper (if there is one) . At Competitive -tier tournaments, players 
+should not be involved in the scorekeeping process.  
+• The Event Organizer may deny entry to a participant if the player is barred from the 
+venue or would exceed the venue’s capacity. This is in addition to the rules listed under 
+2.1 Eligible Participants above.  
+• The Event Organizer may have a participant removed from the venue  and should do so if 
+that participant has performed any of the significant unsporting  conduct detailed in Part 
+2: Floor Rules . 
+• The Event Organizer may designate one or more individuals as a leader, such as Head 
+Judge, Floor Judge, S corekeeper, etc.  
+• The Event Organizer may always modify which individuals are designated for leader 
+roles to preserve the integrity of the event.  
+• By default, the Event Organizer also holds the responsibilities of every leader role that 
+they have not appointed someone to serve as.  
+ 
+2.2-B. Head Judge  
+An event may have up to a single Head Judge. A Head Judge should be very knowledgeable in 
+the game rules and event regulations. These leaders act as the final authority for the 
+interpretation and application  in those matters. The Head Judge responsibilities are:  
+ 
+• Familiarizing themself with up-to-date rules documentation . 
+• Enforcing correct rulings and tournament policies.  
+• Clearly identifying themself as the Head Judge to players at the start of an event.  
+• Reviewing determinations made by Floor Judges when a player requests that they do so 
+and providing a final determination.  
+• Providing final determinations when they answer game rules and event regulation 
+questions themself or when they personally resolve disputes between players regarding 
+the game state.  
+• At a tournament, making informational announcements after completing player 
+enrollment, just before beginning the first round of play.  The Head Judge announcement 9 
+ will briefly explain the tournament tier, provide details of the event’s structure, and warn 
+against unsporting conduct.  
+• Helping to determine if unsporting conduct has occurred and what the appropriate 
+remedy for the situation is. In cases where Disqualification of a participant is possible, 
+the Head Judge should inform the Event Organizer before issuing the penalty.  
+o Only the Head Judge has the authority to disqualify participants from an event. 
+More information about this penalty can be found in Part 2: Floor Rules.  
+• Maintaining an air of professionalism and courtesy while staffing the event.  
+o Head Judges should refrain from engaging in trading, long personal 
+conversations, phone calls, or other activities that would distract them from their 
+duties during the event.  
+• Reporting results  of Competitive -tier events  to FFG OP, when applicable (see below).  
+• (Optional) Performing the duties and responsibilities of a Floor Judge.  
+ 
+The Head Judge is responsible for reporting the results  of Competitive -tier events  to FFG OP. 
+Most of the time, this will be handled automatically by the official tournament software on 
+Melee.gg . However, if the available technology prevents automatic reporting, the Head Judge 
+must send an email to FFG OP within 1 week of the event’s conclusion. This email must contain 
+the following information:  
+• Event results  
+• Final player standings  
+• Any incidents that occurred  
+• Penalt ies issued, disqualifications, and/or bans  
+• Any and all rulings  they made during the event , including thorough descriptions of the 
+situation , justifications for the rulings, and justification  for why the Head Judge decided 
+not to follow the written rules (see below).  
+ 
+A Head Judge’s rulings and decisions about the game and the event are final and absolute. T he 
+Head Judge should always try to stick to the written rules as much as possible, but may decide in 
+rare occasions  to deviate from these rules in order to ensure the event runs smoothly for all 
+players and its integrity is maintained.  Any ruling that is made  by the Head Judge  about a 
+specific card or c ard interaction during a n event should be communicated to all participating 
+players as soon as possible between rounds. This ruling is only valid during that event  and only 
+for games happening during that event . In case of a conflict, a ruling made by a Head Judge 
+overrules the written rules of the game and its Tournament Regulations. Any such ruling made by 
+a Head Judge must be communicated to FFG OP via email , including a clear explanation of the 
+ruling that was made and justification for why the ruling was made.  
+ 
+2.2-C. Floor Judge  
+An event may have any number of Floor Judges, including none. These leaders are expected to 
+be knowledgeable of the game rules and event regulations. Floor Judge responsibilities  include:  
+ 10 
+ • Assisting players and spectators. The primary way that Floor Judges do so is by resolving 
+infractions or answering questions of the game rules and event regulations as they arise.  
+o Floor Judges also help to resolve disputes between players regarding the game 
+state. Their determinations are subject to review by the Head Judge.  
+o Floor Judges can answer questions about game mechanics, the legality of the 
+activation of an effect, and the understanding of a particular card’s text. However, 
+the judge can ONLY answer these questions if they pertain to cards  or effects  on 
+the table  or in a player’s discard pile (i.e. , cards that are public knowledge).  
+• Walking around the event floor and observing matches  and intervening when an 
+infraction is noticed . 
+• Performing deck checks to ensure the integrity of the event is maintained.  
+o Deck checks can be performed at any point during an event, including during a 
+game.  
+• Assisting in the  delivery of match results to the Scorekeeper.    
+• Maintaining an air of professionalism and courtesy while staffing the event.  
+o Floor Judges should refrain from engaging in trading, long personal 
+conversations, phone calls, or other activities that would distract them from their 
+duties during the event.  
+• Referring any issues related to unsporting conduct to the Event Organizer and/or Head 
+Judge.  
+• Respecting the authority of the Head Judge and Event Organizer  and helping them to 
+ensure the event runs as smoothly as possible.  
+ 
+2.2-D. Scorekeeper  
+Any tournament event, especially Competitive -tier tournaments, should have at least one 
+Scorekeeper. These leaders help keep the engine of the event running, and they are expected to 
+be knowledgeable of at least the event regulations.  Scorekeeper responsibilities include:  
+ 
+• Utilizing tournament software to accurately track each player’s win -loss record . 
+• Printing, distributing, and collecting match slips for each round of the tournament.  
+• Ensuring that each player is paired with the correct opponent.  
+o This includes clearly posting the pairings for players to see.  
+o During Swiss rounds , the correct opponent is a player who shares the same win -
+loss record, or as close to that as possible.  
+o During Elimination rounds, the correct opponent is the next player along the 
+bracket track.  
+• Correcting errors in players’ records or round pairings.  
+o If correcting an error would significantly alter current pairin gs or affect the 
+tournament’s round structure, the Scorekeeper should discuss the correct course of 
+action with  the Head Judge and/or Event Organizer . 
+ 11 
+ *Note: For larger events, it is beneficial to have multiple Scorekeepers  in order to divvy up the 
+above responsibilities to improve efficiency.  
+ 
+2.2-E. Additional Event Staff  
+There are two additional , optional leader roles that can be utilized in an event: the Event 
+Manager  and the Media  Staff .  
+ 
+The Event Manager  functions as the Event Organizer’s second -in-command and  assumes all the 
+same responsibilities as the Event Organizer whenever the Organizer is unavailable. In larger 
+events, the Event Organizer can delegate some of their responsibilities to the Event Manager in 
+order to help improve efficiency  in running the event.  
+ 
+The Media  Staff  includes anyone taking photos, providing commentary, interviewing players, 
+and/or operating livestream equipment in direct association with the Event Organizer . Only 
+people designated as Media  Staff by the Event Organizer are considered to be this type of leader; 
+third parties providing their own media coverage  (with the consent of the Event Organizer and 
+any players involved)  are not considered to be Media  Staff for the event.  Instead, they are 
+considered to fall under 2.4-C. Influencers and Media . 
+ 
+2.3 Players  
+The duties of a player are numerous but can be summarized as follows: come prepared and play 
+with good sportsmanship. Players hold the following responsibilities:  
+ 
+• Being physically present at the event and playing in at least one round of the event. A 
+player that enrolls but does not play in any rounds of the event is not considered to have 
+been a player and is not eligible for any prizes, even participation prizes.  
+• Bringing all necessary materials to play in the event. This includes materials required by 
+the Event Organizer and any materials defined in the relevant game rules or event 
+regulations.  
+• Informing a Scorekeeper  of their intent to leave or drop from the event, verbally or in 
+writing if requested.  
+• Interacting with other participants in a respectful manner and providing honest and 
+complete information to leaders.  
+• Making decisions and playing at a reasonable pace  (see Part 2: Floor Rules, Section 3.6 
+Slow Play  for more information) . 
+• Communicating in a sufficiently clear manner with their opponents and maintaining a 
+clear game state.  
+o This includes proper use of tokens, markers, and counters that leave no room for 
+ambiguity. For example, if a player places their hand on the table temporarily, it is 
+advised that they place a marker on those cards to distinguish them from any other 
+face-down cards that may be on the table.  12 
+ • Seeking the assistance of a Floor Judge if unable to amicably resolve a game disruption 
+in their current game.  
+• Not engaging in unsporting conduct or violating the integrity of an event  (see Part 2: 
+Floor Rules, Section 3.8 Unsporting Conduct  for more information) . 
+• Immediately informing a leader of any unsporting conduct or attempts to undermine the 
+integrity of an event.  
+• Abiding by the eligibility restrictions of an event (see 2.1 Eligible Partic ipants ). 
+• Being aware of the contents of this document. Players are not expected to memorize the 
+Master Event Document, but they will be expected to act in accordance with the content  
+herein, especially that of Part 2: Floor Rules.  
+ 
+2.4 Spectators  
+All Spectators are optional participants in an event. They come in three varieties: On-Site 
+Spectators , Digital Spectators , and Influencers and Media.  
+ 
+2.4-A. On -Site Spectators  
+All people present at an event are participating as On -Site Spectators when not actively engaging 
+in another role. This includes casual observers who may have never heard of the game being 
+played and players who are glancing over at another match between gameplay actions. On -Site 
+Spectators have the following responsibilities:  
+ 
+• Refraining from providing outside assistance to players during their games.  
+• Not disturbing games. This includes discussion of the game in progress, making 
+excessively loud noises, or physically intruding on the players or their gameplay area.  
+o If a Spectator witnesses a gameplay mistake , they should respectfully inform a 
+Floor Judge without disturbing or interrupting the game . 
+• Respecting a request by a player or leader to not observe a game or games.  
+ 
+2.4-B. Digital Spectators  
+All people who are watching a stream, recording, or other digital footage of an event are Digital 
+Spectators. The footage in question does not need to be recent to qualify as event footage, and 
+thus anytime a Digital Spectator observes a game, they must ab ide by the following 
+responsibilities:  
+ 
+• Refraining from providing outside assistance to players during their games.  
+• Not engaging in harmful, inappropriate, or irrelevant conversation in the chat.  
+• Showing respect to other Digital Spectators and to the people within the footage itself 
+(expressing opinions about a person’s gameplay choices is fine ; calling that person names 
+or making fun of them for their choices is not).  
+ 
+2.4-C. Influencers and Media  13 
+ All people  who provide commentary during a game, interview players between games, or record 
+or stream footage of a game (without being officially  designated Media  Staff) are considered 
+Influencers and Media. Regardless of the work they are doing, all Influencers and Media must 
+abide by the following responsibilities:  
+ 
+• Obtaining the express consent of both the Event Organizer and any players * or event staff 
+involved in their interview, recording, stream, etc.  
+o Taking photographs is a form of recording, and thus requires consent just like all 
+other forms of media.  
+o *Minors cannot be interviewed , and their gameplay cannot be  recorded or 
+streamed by anyone other than official Media  Staff , without exception.   
+• Refraining from providing outside assistance to players during their games.  
+• Not disturbing games. This includes discussion of the game in progress, making 
+excessively loud noises, or physically intruding on the players or their gameplay area.  
+o Anyone providing commentary for a particular game must do so from a respectful 
+distance so that their commentary does not disturb the players . 
+o If an Influencer or Media person witnesses a gameplay mistake , they should 
+respectfully inform a Floor Judge without disturbing or interrupting the game . 
+• Respecting a request by a player or leader to not observe a game or games.  
+ 
+2.5 Performing Multiple Roles  
+Certain participants may engage in multiple roles in an event. NOTE:  Even when a person stops 
+performing a role at a particular event, they must still observe these restrictions in respect to their 
+previous roles.  
+ 
+• At any event, regardless if it is Casual - or Competitive -tier, players cannot also perform 
+any leader role.  
+• The Event Organizer must perform the duties of each other required leader role that they 
+have not designated someone to fulfill. The Event Organizer cannot actively perform any 
+non-leader role, except On -Site Spectator.  
+• A Head Judge that is designated by the Event Organizer cannot actively perform any 
+other role, except On -Site Spectator.  
+ 
+3. Tournaments  
+Many official FFG OP events, especially Competitive -tier events, take the form of a tournament. 
+This section outlines the basic elements of a tournament, which should be clearly communicated 
+by the Event Organizer during the promotional period of an upcoming event.  
+ 
+3.1 Tournament Structure  
+The structure of a tournament determines how the tournament will proceed from start to finish. 
+These details include:  
+ 14 
+ • The number of Swiss rounds to be played. This may be based on attendance.  
+• The length of time allotted for each round of gameplay.  
+• The gameplay format and/or variant (if any).  
+• The number of players in  any progression cuts.  
+• If a progression cut is followed by Swiss, elimination, or double -elimination rounds . 
+• What determines the end of the tournament.  
+ 
+3.2 Tournament Round Mechanics  
+In a tournament , each time a player is assigned an opponent to play against (or multiple 
+opponents in multiplayer formats), they play a round. Each game will define what gameplay 
+constitutes a tournament round in its Tournament Regulations. Different types of rounds are 
+detailed below:  
+ 
+3.2-A. Swiss Rounds  
+A Swiss round is one in which an opponent is paired randomly against another player with the 
+same win/loss record  in the current event (or a similar record, if there are no remaining unpaired 
+players with the same record). The results of every Swiss round are reported to the Scorekeeper. 
+Players can participate in all Swiss rounds of a tournament that occur before a progression cut.  
+ 
+3.2-B. Elimination Round s 
+An elimination round is one in which the losing player is potentially removed from the 
+tournament. They are most frequently used following a progression cut after a number of Swiss 
+rounds. Each game defines a method for determining the winner of an elimination round. 
+Elimination rounds can be single -elimination or dou ble-elimination.  Players can be randomly 
+placed into a bracket or seeded according to their current tournament standing.  
+ 
+In single -elimination  rounds, once a player has lost  a match , they are removed from the 
+tournament. T heir final position in the tournament is determined by the number of elimination -
+round opponents they faced before being eliminated.  
+ 
+In double -elimination rounds, a player must lose twice before being eliminated. After their first 
+loss, the player is paired against other players who have lost a match  and continue to play in a 
+separate bracket until they either lose again or win the tournament.  The player’s final position  in 
+the tournament  is determined by the number of players that made it farther in the “losers bracket” 
+than them.  
+ 
+3.2-C. Progression Cut  
+A progression cut is a process used to separate  the players who have met a certain threshold for 
+performance or standing and allow them to continue competing in the tournament. The majority 
+of tournaments that feature a progression cut will only utilize one:  a progression cut to single - or 
+double -elimination rounds after Swiss rounds.  
+ 15 
+ There are two different methods to conduct a progression cut:  
+• Standings -Based:  After a number of  tournament rounds, standings for all players in the 
+tournament are generated, using tiebreakers to assign each player a specific placement. A 
+standings -based progression cut removes all players below a certain placement from the 
+tournament. The tournament then continues with the remaining players, usually with 
+elimination rounds.  
+• Record -Based:  After a number of tournament rounds , players are categorized by their 
+win-loss records. A record -based progression cut removes all players who have not 
+achieved a predeclared win -loss record  from the tournament. The tournament then 
+continues with the remaining players, usually with elimination rounds.  
+ 
+3.2-D. Bye  
+A bye is an automatic win granted to a player for one tournament round. That player is not 
+assigned an opponent for that round. Byes are most frequently awarded when the number of 
+players is not divisible by two and one player is therefore unable to play f or the round.  
+ 
+  16 
+ Part 2: Floor Rules  
+ 
+Introduction  
+In order for the competition inherent in a game to have meaning, the competitors must implicitly 
+agree to play the game correctly, and to challenge one another and themselves within the 
+confines and structures of that game. This document provides all participants of Fantasy Flight 
+Games Organized Play events the appropriate procedures , guidelines, and penalties involved in 
+proper ly handling rules and conduct violations that may occur at an FFG tournament. In addition, 
+these guidelines explain the general ph ilosophy behind several of FFG’s Organized Play policies. 
+All of the points described in this document are intended  to promote a fair and enjoyable 
+gameplay experience for all players at any given FFG event.  
+ 
+How to Use These Floor Rules  
+These procedure guidelines cover two broad categories: gameplay disruptions  and event 
+disruptions .  
+ 
+It is the players’ duty that all steps and sequences in a game are observed and executed 
+accurately, and that the experience is enjoyable for both parties involved. It is the Judges’ duty 
+(both the Head Judge and Floor Judges)  to determine the proper resolution of any issues that may 
+occur over the course of an event, be they gameplay -related or related to the event itself. Making 
+these judgment calls is one of the central skills of being a Judge.  The ability to assess the 
+details of a specific situation an d make the ruling that best upholds both the letter and spirit of 
+the rules is one of the most important reasons to have official  Judges at events. If necessary, a 
+Floor Judge can refer to the Head Judge for assistance.  
+ 
+This document empowers leaders of FFG OP events to make these critical decisions. A spectrum 
+of possible resolutions exists for each disruption that could occur, and these guidelines exist to 
+help Floor Judges and Head Judges determine which resolution best fits the situation at hand.  
+When issuing a greater penalty than a  Warning Penalty (read this document further for details 
+about different penalty types), the Head Judge should approve the penalty . If a Disqualification is 
+issued, the Event Organizer should  also be made aware  (keep in mind that only a Head Judge can 
+issue Disqualificat ions) . If there is a dispute about a particular issued penalty, the final call is up 
+to the Head Judge based on their respective knowledge of the event and the disruption in 
+question.  
+ 
+Any disputes, arguments, or other issues regarding a Disqualification or other penalty should be 
+reported directly to FFG Organized Play at OrganizedPlay@FantasyFlightGames.com . 
+ 
+  17 
+ 1. Philosophy and General Guidelines  
+Fantasy Flight Games’ Organized Play events uphold a mindset of providing an enjoyable 
+experience that is open to anyone who wants to come and play a game.  This philosophy holds 
+true across all of FFG’s brands, regardless of a game’s age or legacy.  
+ 
+Penalties are intended to educate players who have made a mistake, whether that mistake was 
+gameplay -related or conduct -related.  The reason a penalty is applied at all is to help players learn 
+from their mistakes, and to deter them and other players from making similar mistakes in the 
+future.  
+ 
+1.1 The Role of a Judge  
+As a mediator and conflict resolver, it is a Judge’s duty (both Floor Judges and the Head Judge) 
+to remain impartial and objective no matter what situations may arise. Floor Judges should not 
+involve themselves in a particular match unless they have reason to believe a rules or event 
+guideline violation has occurred. If a Floor Judge witnesses a mistake being performed by a 
+player, they may approach the table and explain to the players the mistake that was made and 
+then correct it accordingly. A Floor Judge  should be capable of identifying an issue and 
+determining the correct response based on the guidelines laid out in this document.   
+ 
+A Floor Judge should be able to realize if a situation may call their impartiality into question. 
+When they recognize this, the Floor Judge should inform the Head Judge of the event and have 
+either a different Floor Judge or the Head Judge make the decision.  
+ 
+All Judges are human, which means they are capable of making mistakes. Upon making a 
+mistake, a Judge should acknowledge it and apologize for their error , then attempt to fix it if it is 
+not too late . If a player commits a gameplay  disruption directly because of incorrect information 
+from a Judge, the Head Judge is allowed to downgrade any penalty that player may receive 
+because of it.  
+ 
+If a player believes that a Floor Judge has issued an incorrect ruling or penalty, that player may 
+appeal to the Head Judge. The Head Judge should listen to both the Floor Judge and the player 
+before deciding on a resolution. Once made, the Head Judge’s decision is final.  
+ 
+Floor Judges  should not deviate from this document’s guidelines. If a Floor Judge feels that a 
+deviation is necessary, they should consult with the Head Judge first. The Head Judge of an 
+event  has the final say on rulings and penalty decisions.  
+ 
+1.2 Penalty Definitions  
+There are four types of penalties  that are used to enforce the guidelines laid out in this document: 
+Point Penalties, Game Losses, Match Losses , and Disqualification.  
+ 
+1.2-A. Point Penalties  18 
+ Point Penalties are the most common form of penalty. The purpose of these penalties is to notify 
+the player that their behavior has moved outside of the rules, to prompt them to correct their 
+behavior, and to educate them so they do not repeat the mistake. When a player is issued a 
+penalty  at an official  event , the involved Judge should write down the player’s name and the 
+reason they have been given the penalty, as well as how many penalty points  that player 
+receives from it (explained below). Please keep in mind that certain gameplay -related  penalties 
+can (and should)  be lessened during Casual -tier events . 
+ 
+Point Penalties come in four varieties: Warning Penalty , Escalated Penalty , Severe Penalty , 
+and Extreme Penalty .  
+ 
+A Warning Penalty  is the most basic form of penalty and is given out when a player commits a 
+minor gameplay disruption that is quickly and easily resolved. These penalties are worth 1 
+penalty point . 
+ 
+An Escalated Penalty  is given when a player causes an intermediate gameplay disruption or 
+minor event disruption , such as a simple error on their deck list or unintentional slow play. These 
+penalties are worth 2 penalty points . 
+ 
+A Severe Penalty  is given when a player repeats an  infraction, causes a significant gameplay 
+disruption, or causes an intermediate event disruption, such as a heated argument between 
+players or bad attitude toward a Judge. These penalties are worth 4 penalty points . 
+ 
+An Extreme Penalty  is given when a player causes a significant event disruption that does not 
+quite warrant a Disqualification, such as aggressive behavior toward an opponent or spouting 
+profanities. These penalties are worth 8 penalty points .  
+ 
+If a player ever accumulates 10 or more penalty points, that player is Disqualified.  
+ 
+As was mentioned earlier , penalty points granted due to gameplay  and non-behavioral event  
+disruptions should be worth 1 fewer penalty point each at Casual -tier events. This is be cause, at 
+events where newer players are still learning the game, it is more appropriate to be lax on 
+disruptions related to players making honest mistakes as they play. However, penalties due to 
+poor behavior, unsporting conduct, or cheating should never  be reduced.  
+ 
+For events that have a streaming table, a Floor Judge may, at their discretion, increase the penalty 
+point value of any behavior -related infractions that happen on stream, particularly for those 
+involving unsporting conduct.  
+ 
+While submitting the results of an event to FFG, the Head Judge  should make sure that the 
+penalty point records of each player that received penalties are included in the event report. In 
+addition, if the Head Judge made any rulings that deviate from the written rules of the game, they 
+should include an explanation of those rulings and why they were made.  19 
+  
+For a clear overview of what infractions can lead to a Point Penalty, see Appendix: Penalty 
+Guidelines  on pg. 31. 
+ 
+1.2-B. Game Loss and Match Loss  
+A Game Loss  is a standard penalty when a player commits a more serious disruption for which a 
+Point Penalty alone is not sufficient,  or a game has been disrupted to the point of no longer being 
+salvageable . The player scores as if they lost the game (or came in last place at a multiplayer 
+table), and the winning player is awarded a win . A Game Loss is issued alongside an appropriate 
+Point Penalty, typically an Escalated or Severe Penalty , depending on the disruption .  
+ 
+A Match Loss  is similar to  a Game Loss but takes it a step further. For tournament rounds where 
+there are several games to a match (i.e. , a best -of-three match) , a Match Loss means the 
+penalized player scores as if they lost the whole match, not just a single game. This is a more 
+severe penalty that should be applied if a Game Loss is not sufficient. A Match Loss is issued 
+alongside an appropriate Point Penalty, typically a Severe or Extreme Penalty, depending on the 
+disruption.  
+ 
+Every Game Loss and Match Loss penalty must be approved by the Head Judge before being 
+issued. While submitting the results of an event to FFG, the Head Judge  should include the 
+names of all players who received a Game/Match Loss penalty throughout the event  and 
+why they received that penalty.  
+ 
+1.2-C. Disqualification  
+Disqualification is the standard penalty if a player has received 10 or more penalty points in an 
+event . The player automatically receives a Match Loss for the current round and is dropped from 
+the event  without receiving any prizes associated with their final position.  
+ 
+Note: Only the Head Judge has the authority to Disqualify a player from an event.  Floor 
+Judges may recommend a certain player for Disqualification to the Head Judge —such as when 
+that player receives multiple Point Penalties —but only the Head Judge themself is able to 
+actually Disqualify them.  
+ 
+At the Event Organizer’s discretion, a player can be removed from the event venue , especially 
+when that player has been Disqualified.  
+ 
+While submitting the results of an event to FFG, the Event Organizer should include the names 
+of all players who received a Disqualification throughout the event  and why they received 
+that penalty . If a player consistently earns Game/Match  Losses or Disqualifications across 
+multiple events, this information should be shared with FFG OP as well. Organized Play events 
+should operate under the assumption that all players are given the benefit of the doubt; that said, 
+patterned disruptive behavior should not be ignored.  
+ 20 
+ 2. Gameplay Disruptions  
+2.1 What Defines a Gameplay Disruption  
+A Gameplay Disruption occurs whenever a game step, sequence, or mandatory occurrence is 
+unintentionally overlooked or performed erroneously. For dealing with issues regarding repeated 
+or intentional abuse or violation of the rules, see the Cheating  section of Unsporting Conduct  
+under 3. Event Disruptions.  
+ 
+It is each player’s responsibility to play the game accurately and resolve all mandatory card 
+abilities and game steps as necessary in order to maintain a proper game state. The potential for 
+one player or the other to gain advantage by overlooking a step or mandatory occurrence is very 
+real, which is why these disruptions are taken seriously. Even if a player did not intend to 
+overlook a rule, they could still benefit enough to turn the game in their favor. Thus, it is 
+imperative that these disruptions be dealt with in order to restore the integrity of the game. To do 
+this, Floor Judges are encouraged to use one of two main resolutions: resolve now  or rewind . 
+ 
+The resolve now  solution is used when the overlooked rule or ability in question can still be 
+retroactively applied without giving either player major advantage.  
+ 
+The rewind  solution is used when the resolve now solution cannot be used without giving one 
+player significant advantage over the other. For this solution, players reverse their actions and 
+“back up” the game to the point where the mistake was made, correct it, then  continue on from 
+that point as normal.  
+ 
+When performing a rewind, the Floor Judge should ensure the following:  
+• A proper investigation is conducted on the situation, the board state, past actions, the 
+possibility of malicious  intent/unsporting conduct, and who is gaining information and/or 
+advantages from the situation.  
+• An investigation should ideally take only a few minutes. If the investigation takes more 
+than two minutes, then additional time should be given to the players to finish their 
+match.  
+• After performing the rewind, the Floor Judge’s “footprint” on the game should be as little 
+as possible. Even the slightest disruption to the flow of the game should be avoided when 
+possible.  
+• Remember, the goal of the Floor Judge , when possible, is to make sure the game is 
+continuing as it should have on every aspect, as if the problematic situation never 
+occurred.  
+ 
+Please note that the further from an oversight a game advances, the more complicated the rewind 
+procedure becomes. If the game has advanced to a point where rewinding would undo a 
+significant portion of the game, the Floor Judge can decide, on their judgment, that the game 
+cannot be rewound. If this happens, the Head Judge should be notified, and the player who 
+committed the infraction is given a Game Loss.  21 
+  
+As a general rule, it is up to the Floor Judge to decide what action is necessary to resolve an 
+issue. If a Floor Judge is uncertain about what to do, they should call the Head Judge to help 
+determine a solution.  
+ 
+The three types of gameplay disruptions are: Missed Mandatory Abilities, Missed Game Steps , 
+and Inaccurate Gameplay . Generally, if a gameplay disruption is relatively small and only 
+happens once, then the player receives a Warning Penalty  and that’s it. If a disruption is larger 
+(meaning it significantly disrupts the flow of the tournament round), or a player commits the 
+same gameplay -related infraction more than once, then the penalty may be escalated accordingly.  
+ 
+2.2 Missed Mandatory Abilities  
+A missed mandatory ability occurs whenever an automatic card ability that should have occurred 
+is skipped or overlooked. A mandatory ability that should not occur, but is resolved by mistake, 
+also counts as a missed mandatory ability.  
+ 
+Examples of mandatory abilities include conditional card text (“when X occurs, do Y ,” etc.)  and 
+non-optional keyword abilities.  Optional abilities often include “may” in the ability’s description.  
+ 
+It is a player’s responsibility to make sure both they and their opponent(s) are fully aware  of all 
+abilities (both mandatory and optional)  of each card they play, both when the card is initially 
+played and when asked at any point. This includes a clear distinction of who controls each ability 
+and who benefits from them. This responsibility is doubly important in an international 
+environment in which players may have cards written in different languages than their 
+opponents.  
+ 
+Likewise, it is a player’s responsibility to resolve each ability at the appropriate time , and to 
+know when the trigger and its resolution occur. Sportsmanship is encouraged, and players can 
+remind their opponents of their optional abilities if they wish, though this is not mandatory.  
+ 
+The responsibility is shared by all players to make sure if a player can or cannot take a specific 
+action or resolve a specific ability, or if they are finished with their actions and abilities.  
+ 
+2.3 Missed Game Steps  
+A missed game step (or game effect) occurs whenever  an automatic game occurrence that should 
+have occurred is skipped or overlooked. A forced game occurrence that should not occur, but is 
+resolved by mistake, is also considered a missed game step.  
+ 
+Examples of game steps include the readying of cards  at the end of a round , drawing cards,  or the 
+removal of tokens/cards at the end of the round.  
+ 
+2.4 Inaccurate Gameplay  22 
+ Inaccurate gameplay occurs any time an ability or game step is resolved in an incorrect or 
+inaccurate manner.  
+ 
+Examples of inaccurate gameplay include when a player performs an illegal action  (such as 
+playing a card when an effect prevents them from doing so)  or incorrectly resolves a card ability 
+(such as if they misread a number).  
+ 
+2.5 Repeated Gameplay Disruptions  
+The guidelines laid out in this section have been in reference to the first time a player 
+unintentionally  commits any of these infractions over the course of an event. Even expert players 
+are capable of making the occasional mistake, thus the first time one of these incidents occurs in 
+an event , a low -level penalty is often sufficient  (unless it leads to a much larger disruption of the 
+event overall). However, if a player repeats the same mistake a second or third time over the 
+course of the same event, the n this is a more serious infraction.  
+ 
+As mentioned earlier in this document, the purpose of a penalty system is to inform a player 
+when they have committed an infraction and to educate them so that it does not happen again. If 
+a player does not heed this warning and performs the same mistake a gain, then the involved 
+leader should investigate for cheating.  
+ 
+Regardless of the reason behind it, a repeated infraction should be taken seriously, and thus 
+warrants a n Escalated Penalty at the very least.  
+ 
+3. Event Disruptions  
+3.1 What Defines an Event Disruption  
+An Event Disruption  occurs whenever a participant makes a mistake or behaves in a manner 
+that threatens the integrity, hospitality, or general safety of the event itself. While gameplay 
+disruptions can throw off an individual game, event disruptions can affect the entire eve nt, and 
+thus should not be taken lightly. Event disruptions can be intentional or unintentional —it is up to 
+the Floor Judges, the Head Judge, and the Event  Organizer to interpret a situation and determine 
+the best course of action.  
+ 
+The goal of FFG’s Organized Play is to promote a safe, welcoming environment for players of all 
+kinds to come and enjoy the games they love. Event disruptions, even minor ones, can lower or 
+even ruin an attendee’s enjoyment. All attendees  are held to the expectation that they treat every 
+person around them with politeness, respect, and general courtesy. Those who violate this 
+expectation risk being deemed unwelcome at the event, and, at the Event  Organizer’s discretion, 
+may be removed from the premises. Rep eat offenders may be suspended from attending official 
+FFG OP events , at FFG’s discretion.  
+ 
+3.2 Tardiness and Absences – Escalated Penalty , Game/Match Loss  23 
+ Each player in an Organized Play event is responsible for being present at the correct  table at the 
+start of a tournament round. If a player is not in their correct seat by the scheduled start time of 
+the round, then that player is tardy , and their opponent may call a Floor Judge and ask them to 
+start a timer. The tardy player receives an Escalated Penalty  at this time .  
+ 
+A player is tardy if they are between 1 and 5 minutes late. After 5 minutes, if the tardy player 
+still has not shown up, then that player is absent  and is given a Game Loss . If the absent player 
+does not show up within 10 minutes of the start of the round , then that player is given a Match 
+Loss , they receive a Severe Penalty , and they are dropped from the tournament roster . This is 
+not a Disqualification —if, after being dropped from the tournament, the absent player shows up 
+again  before the beginning of the next round, that player may be re -added to the tournament 
+roster upon their request . 
+ 
+A player must take care to arrive at the correct seat and play against the correct opponent. If a 
+player sits at the wrong table and plays against the wrong opponent, this counts as being 
+tardy/absent  for their actual scheduled match. The player who sat at the wrong table receives a 
+Game Loss, and both players  receive  the Escalated Penalty —this is because  both players in a 
+match are responsible for paying attention to the pairings and making sure that they play against 
+the correct opponent.  
+ 
+For events that have a streaming table and/or static seating, those tables are treated the same as 
+any other table regarding tardiness and absence.  
+ 
+3.3 Errors with Deck Lists – Escalated Penalt y, Game/Match Loss  
+Deck lists are tools used by leaders to ensure the validity of a particular deck, as well as check 
+during the course of a tournament whether or not a player has altered their deck’s contents. At 
+any time in between rounds, a Floor Judge may check a player’s deck to see if it matches their 
+list. 
+ 
+If an error or illegality is found on a player’s list before the beginning of a round —such as a deck 
+having less than the legal number of cards —a Judge should explain the error to the player and 
+ask them to fix it before the round begins. If the error is discovered before the first round of the 
+tournament , the player fixes the error and only receives a Warning Penalty. If the error is 
+discovered in between rounds, however, then the player receives a larger penalty (described in 
+the table at the top of the next page ) in addition to having to fix their deck or deck list. If the 
+Floor Judge thinks this error may have been committed intentionally by t he player to gain an 
+advantage in some way, then the Floor Judge should investigate for cheating.  
+ 
+If a player ever repeats this infraction within the same event, then that player should be 
+immediately Disqualified.  
+ 
+The following table provides a quick glance at common types of deck and list errors and what 
+sort of penalty should be issued in response to each as well as how the error should be corrected. 24 
+ Regardless of the penalty issued , the player must immediately correct the list error  as 
+appropriate for the specific situation (explained in the “resolution” column of the table below). 
+Any corrections made to a deck or deck list should be made under the careful supervision 
+of a Floor Judge or other leader .   
+ 
+Table: Deck and Deck List Errors  
+Error  Resolution  Time of Discovery  Penalty Issued  
+Both the deck and the 
+deck list are legal, but do 
+not match each other.  The deck must be 
+corrected to match the 
+list. Before the start of round 1  Warning Penalty  
+In between rounds  Escalated Penalty, Game 
+Loss for next round  
+During a round  Escalated Penalty, Game  
+Loss  
+The deck list is illegal, 
+but the deck itself is legal.  The list must be corrected 
+to match the deck.  Before the start of round 1  Warning Penalty  
+In between rounds  Escalated Penalty, Game 
+Loss for next round  
+During a round  Escalated Penalty, Game  
+Loss  
+The deck list is legal, but 
+the deck itself is illegal .  The deck must be 
+corrected to match the 
+list. Before the start of round 1  Warning Penalty  
+In between rounds  Escalated Penalty, Game 
+Loss for next round  
+During a round  Escalated Penalty, Game  
+Loss  
+Both the deck list and the 
+deck itself are illegal.  Player must create a legal 
+deck  list and then match 
+the deck to it , then have 
+both checked and 
+approved by a Floor 
+judge.  Before the start of round 1  
+ Escalated Penalty. Also, a 
+Match Loss for the first 
+round.  
+The player is 
+Disqualified.  In between rounds  Disqualification  
+During a round  Disqualification  
+ 
+3.4 Marked Cards – Escalated Penalty  
+All objects eventually become affected by wear and tear, and cards and sleeves are no exception. 
+Over the course of a tournament or several tournaments, a sleeve for a card may become marked 
+in a way that would allow the player to distinguish it from the others in their deck. If a Floor 
+Judge notices this, they should perform a deck check for that player’s deck, then, if the marked 
+cards seem unintentional, the Floor Judge should ask the player to change the sleeve so that it 
+better matches the other cards in its deck.  If it is clear that the player was not intending to take 
+advantage of this (or may have not even noticed the mark), then a Warning Penalty is sufficient. 
+The Floor Judge should make sure the player understands the importance of maintaining the 
+integrity of their sleeves.  
+ 
+If, at a Casual -tier event, a card in an unsleeved deck is distinctively marked in some way, then 
+the Floor Judge can issue a warning and ask the player to either replace the card with an 
+unmarked copy of the same card or use opaque sleeves that will obscu re the mark from view.  
+ 25 
+ Players are responsible for maintaining the quality of their game materials, and if a Floor Judge 
+believes a player may be intentionally using marked cards or sleeves to gain an advantage, they 
+should investigate for cheating.  
+ 
+If a Floor Judge deems it necessary, they may create proxies if a card or cards become 
+marked/damaged over the course of an event. For more information about how this is done, 
+please refer to the game’s Tournament Regulations.  
+ 
+3.5 Card Manipulation Errors  – Escalated Penalty  
+Mistakes happen, and sometimes a player grabs one too many cards while drawing , 
+absentmindedly draws a card when not allowed to do so , or reveals the wrong number of  cards 
+while resolving a game effect . This section address es disruptions involved when a player 
+accidentally  draws extra cards , reveals extra cards , or otherwise unintentionally damages the 
+integrity of the game when manipulating cards, decks, or other card -related aspects of the game 
+area (hereafter referred to as “card errors”) . If the Floor Judge has reason to believe that a card 
+error  was intentional, they should investigate for cheating.  
+ 
+The Judge must thoroughly investigate the game state and what sequence of events happened 
+before the card error occurred. Any action or effect that affected the deck (or other  card pile) 
+should be mentally tracked as much as humanly possible. Once the investigation is complete, the 
+Judge should perform whatever actions are necessary to fix the issue, with the goal of leaving no 
+clear advantage to the player who performed the mistake , and let the game continue as it should 
+have before the card error occurred. After reaching a resolution, the Floor Judge issues the player 
+who performed the card error an Escalated Penalty.  
+ 
+As a reminder, the random portion of the deck  is made up of all the cards in the deck that are still 
+unknown to both players. Any card that has been legally placed at a specific position within the 
+deck (such as the top or bottom) or was legally known to be at a specific position (such as a card 
+revealed by an ability) does not belong to the random portion of the deck. The Judge should 
+make sure those cards remain where they are supposed to be once the resolution is complete.  
+ 
+Example 1:  Player A is supposed to draw 2 cards and accidentally draws 3.  
+ 
+In this situation, the Judge must first investigate whether any of the drawn cards were known 
+information to the player (for example, they previously used an ability to look at the top X cards 
+of their deck). If all of the cards were known, then the Judge returns the extra card back to its 
+original position in the deck. If any of the cards were not known information, then the Judge 
+should identify the extra card as best they can and reshuffle it back into the random portion of the 
+deck. If the extra card cannot be identified, then the Judge must pick a card at random from 
+Player A’s hand, excluding any card that is known information to both players (such as a card 
+that was returned to Player A’s hand from play by an in -game effect). The random ly-chosen card 
+is shuffled back into the random portion of the deck. After resolving this issue, the Judge then 
+issues Player A an Escalated Penalty.  26 
+  
+Note:  Whenever a Judge shuffles a card back into the random portion of a deck, this does not 
+count as an in -game shuffle for any abilities or effects that may trigger off of such.  
+ 
+Example 2: Player A triggers an ability that allows them to look at the top 2 cards of their deck. 
+However, they accidentally look at the top 3 cards of their deck.  
+ 
+In this situation, the Judge should investigate if the cards that were seen were all or partially 
+already known information to the player who made the mistake. The known cards should stay 
+where they were supposed to be before the mistake (i.e. within the top 2 cards of the deck). The 
+other cards should be reshuffled within the random portion of the deck. The Judge then issues 
+Player A an Escalated Penalty.  
+ 
+Example 3: Player A has a hand of 2 cards and, after briefly setting their hand aside, 
+accidentally picks up some other cards that they had placed face -down as part of gameplay, 
+mistaking it for their hand.  
+ 
+In this situation, the Judge should investigate to make sure that all cards involved in this incident 
+can be identified , and also identify the status (ready or exhausted) that the face -down cards were 
+in before they were picked up. If everything can be properly identified, the Judge should simply 
+swap the cards back into their original positions and status and allow the player to reclaim their 
+hand  and keep playing . If the involved cards cannot be identified, then the game has been 
+irreparably compromised, and Player A  should be given a Game Loss and an Escalated Penalty. 
+If the cards can be properly identified, but the status of the face -down cards (whether they were 
+ready or exhausted) cannot be determined, then the Judge should set those cards as exhausted 
+and Player A should receive an Escalated Penalty.  
+ 
+3.6 Slow Play – Escalated Penalty  
+Even at Casual -tier events, players are expected to play at a pace that will not set their opponent 
+at a disadvantage because of the time limit. Slow play is an issue that arises when a player takes 
+more time than necessary to perform one or more game actions. There can be a very fine line 
+between slow play, which is unintentional, and stalling, which is a form of cheating.  Players 
+should openly communicate if they believe their opponent is playing too slowly —oftentimes a 
+simple “I need you to play more qui ckly” from a Floor Judge is all that is needed to remedy the 
+situation.  
+ 
+Typically, a player should not need more than an average of 10 to 15 seconds  (20 to 25 seconds 
+in a Casual event)  per game action.  In this context , a “game action” is any single action 
+performed during gameplay, such as playing a card or triggering an ability.  The occasional longer 
+turn is not slow play, but if a player is consistently taking longer to make a decision , especially 
+when there are few legal actions they can take,  then that is considered slow play.  
+ 27 
+ Once a Floor Judge has witness ed the slow play , they can issue the “play more quickly” reminder 
+alongside a n Escalated  Penalty. If the player continues to play slowly even after being asked to 
+speed up by the Floor Judge, then the Judge should issue another penalty, increasing the severity 
+with each repeated offense (Severe Penalty on the second offense , Extreme Penalty on the third) . 
+Repeated offenses, especially after receiving warnings and penalties, can also warrant a Game 
+Loss if the Floor Judge thinks it is appropriate.  
+ 
+If a Floor Judge believes that a player is intentionally stalling to take advantage of the time limit, 
+then this is a form of cheating  and should be dealt with as such.  
+ 
+3.7 Hygiene – Varies  
+Organized Play events are public events, therefore they come with expectations that all 
+participants follow a standard of hygiene. Basic polite practices such as washing one’s hands 
+after using the restroom or covering one’s mouth while coughing/sneezing s hould come as no 
+surprise. In terms of general hygiene, it is a player’s responsibility to take care of themselves so 
+that they do not disrupt the event at large. If a player chooses not to take care of themselves and 
+thus sours the experience for other at tendees, the leaders of the event may ask the player to 
+correct this behavior. If the player refuses, then a penalty may be issued at the leader’s discretion.  
+ 
+Generally, hygiene -related disruptions can fall under the following categories:  
+• Excessive Body Odor  – Players are not expected to smell like a bed of roses. However, if 
+a player’s body odor is intense enough to distract their opponent or any of their 
+neighbors, then a leader may ask them to apply some deodorant or perform a similar 
+corrective measure. F ailure to cooperate with this expectation can result in a  Warning or 
+Escalated Penalty , depending on the severity of the stink . 
+• Illness – In the interest of keeping everyone healthy, players should avoid coughing or 
+sneezing on other people or their game components. Wearing a mask or at the very least 
+covering one’s mouth when coughing/sneezing is not only courteous, but also expected of 
+every event attendee who is even a little sick. If a player is contagious or very clearly 
+unwell, then they should not attend. Failure to cooperate with these expectations can 
+result in a n Escalated or Severe Penalty , depending on the offense .  
+• Open Wounds/Sores  – Basic health concerns dictate that if any event attendee has an open 
+wound or sore on an exposed part of their body (such as their arm or face), that person 
+should take care to cover that wound/sore before attending the event. Failure to cooperate 
+with this expectation can result in a Severe Penalty . 
+• Unwashed Hands/Bodies  – Public gaming events often involve a lot of people sharing a 
+limited space. Because of this, it is a player’s responsibility to keep themselves and their 
+playing area relatively clean as a courtesy to other event participants. Players should take 
+care t o wash their hands before each round of the tournament when possible. If a player 
+leaves behind a noticeable amount of sweat, hair, or other bodily residue in their playing 
+space or on another player’s components, it is that player’s responsibility to clea n the 
+mess as quickly and thoroughly as possible. Failure to cooperate with this expectation can 
+result in a Severe Penalty . 28 
+  
+3.8 Unsporting Conduct – Varies  
+Unsporting conduct occurs when a person behaves poorly toward another person at the event, 
+seeks to gain advantage in the game by intentionally exploiting a factor that is external to the 
+game or event, or cheats while playing in some way. Unsporting condu ct directly violates FFG’s 
+goal for Organized Play events, and thus will not be tolerated , regardless if the event is Casual - 
+or Competitive -tier.   
+ 
+3.8-A. Basic Expectations  
+All people who attend a Fantasy Flight Games Organized Play event are held to the same basic 
+behavioral expectations, regardless of background, experience with the game, or influence within 
+the community. It does not matter if the person is a player, a spe ctator, or a leader; everyone who 
+attends an Organized Play event in any form is responsible for maintaining basic human decency 
+and treating everyone around them with politeness and respect.   
+ 
+Failure or refusal to adhere to these basic expectations can warrant a penalty for the offending 
+person, at the leaders’ discretion.  
+ 
+3.8-B. Minor Unsporting Conduct: Inappropriate Behavior  
+This kind of unsporting conduct involves actions that make other event attendees —be they 
+players, spectators, or leaders —uncomfortable around the person committing the act. It is mostly 
+up to a Judge’s discretion on which acts could be classified as “minor ” conduct violations; as a 
+general rule, any situation that causes social discomfort in the moment could be considered a 
+minor disruption. The typical penalty for minor unsporting conduct is a Severe Penalty , but a 
+Head Judge may upgrade it to an Extreme  Penalty  at a Floor Judge’s request if they deem it 
+appropriate. A reminder: only the Head Judge is authorized to Disqualify a player from an 
+event , and only the Event Organizer can  have them removed from the premises.  If a Floor 
+Judge believes a player should be removed from an event, they must recommend that player for 
+Disqualification to the Head Judge.  
+ 
+Any incidents that could significantly sully or even ruin an attendee’s experience for that event 
+are considered more severe than what falls under this category.  
+ 
+The following are some examples of inappropriate behavior that fall under minor unsporting 
+conduct:  
+1. A player uses vulgar or profane language or makes profane or offensive gestures toward 
+another person.  
+2. A player inappropriately demands that a Floor Judge issue a penalty to their opponent.  
+3. A player requests outside assistance from a spectator , or a spectator provides unsolicited 
+outside assistance  for a player . 
+4. A player insults another person , be they another player, a spectator, or a leader.  
+5. A player fails to follow the instructions of a Floor Judge, Head Judge, or Event Organizer.  29 
+ 6. A player leaves excessive trash at the table or play area after getting up and leaving.  
+7. A player stomps around, throws their deck onto the ground, or performs other frustrated 
+outbursts after losing a game. If a player begins to act too aggressively, this is a more 
+serious disruption (see 3.8-D. Aggressive Behavior).  
+8. A player celebrates a victory loudly and excessively beyond what could be deemed 
+appropriate or is rude and condescending toward the player they defeated (“rubbing it in,” 
+for example).  
+9. A person attending the event is wearing offensive clothing or has offensive images on 
+their game materials, such as a game mat. The player must remove or cover up the 
+offensive imagery or risk an upgrade to their penalty. “Offensive” in this context is:  
+a. Anything that could be deemed as racist, sexist, or discriminatory in any way.  
+b. Graphically violent/gory imagery.  
+c. Sexually suggestive or explicit material.  
+d. Strong language, i.e. , swear words, slurs, etc. (keep it PG!)  
+ 
+It is possible for a misunderstanding to cause a person to feel uncomfortable . A player may 
+make a comment or act in a way that offends or disturbs another person without them meaning 
+to. If a Floor Judge assesses the situation and determines that the offending player did not intend 
+to cause offense, and the player is genuinely  apologetic about it, that  Floor  Judge may ask the 
+Head Judge to downgrade the penalty to just a n Escalated Penalty  at their discretion. However, if 
+the same player commits a second offense of this nature later during the event, then that player 
+should be immediately Disqualified. It is important that the Floor Judge clearly communicate this 
+with the player and, if necessary, edu cate the player to make sure they understand what was 
+wrong about their behavior.  
+ 
+3.8-C. Major Unsporting Conduct: Harassment  
+This kind of unsporting conduct involves actions of malicious intent or great inconsideration that 
+could ruin another person’s experience or cause them to want to leave the event. Harassment of 
+any form is absolutely not allowed at FFG Organized Play events  and will be dealt with 
+severely. Harassment can include (but is not limited to) any language or behavior that is hostile, 
+threatening, demeaning, solicitous, or objectifying.   
+ 
+To make a person feel uncomfortable, unsafe, or unwelcome at an event directly goes 
+against FFG’s goal for Organized Play events . Players who harass another person even once 
+will receive an immediate Disqualification . A player who continues to harass someone or 
+commits a particularly severe offense should be removed from the event space.  
+ 
+The following are some examples of harassment -related behavior that fall under major 
+unsporting conduct:  
+1. A person uses a racial slur or other derogatory term or phrase against another person.  
+2. A person takes inappropriate photos of another person without express consent.  
+3. A person makes unwanted romantic or sexual advances on another person and does not 
+stop when denied.  30 
+ 4. A person purposefully gets in the way of another person with the intent of causing 
+physical contact.  
+5. A person intentionally touches another person in an unwanted or threatening way (i.e. , 
+grabbing their shoulders or shirt, touching their head or face, slapping their rear, etc.) . 
+6. A person bullies another person through social media or manipulative language.  
+ 
+3.8-D. Aggressive Behavior  
+An FFG Organized Play event is meant to be a safe place where players can enjoy their game 
+without worry. Any person —be they player, spectator, or leader —that disrupts this sense of 
+safety with aggressive or violent behavior will not be tolerated. The Event  Organizer may deny 
+entry to a player who exhibits this behavior or have such a player removed from the venue as 
+necessary.  
+ 
+The following are some examples of aggressive behavior:  
+1. A person moves to strike another person or verbally threatens to do so.  
+2. A person pulls a chair out from under another person, causing them to fall to the ground.  
+3. A person throws game components or other objects in frustration or anger.  
+4. A person intentionally overturns a table.  
+5. A person begins shouting at another person in anger.  
+6. A person brings a weapon to the event or threatens to bring one.  
+ 
+None of this or like behavior will be tolerated in any capacity. If a player acts aggressively in any 
+fashion, the Head Judge  should immediately Disqualify  them. Then, it is recommended that the 
+offending person be removed from  the venue  by the Event Organizer . At the end of the event, the 
+disqualified player and the incident in question should be reported to FFG OP.  
+ 
+3.8-E. Bribery and Collusion  
+Players come to Organized Play events with the intent to enjoy themselves playing a game they 
+love while competing against others in a welcoming environment. Bribery and collusion can 
+violate the integrity of this environment by putting more emphasis on ma nipulating the system 
+than actually playing the game, which is not the kind of event that FFG wants to promote.   
+ 
+Bribery  involves a player offering some form of reward or incentive to their opponent in order 
+to convince them to concede, draw, or even alter the results of a game. A bribe can come in any 
+form that the opponent finds desirable, whether it be money, promotional material, prizes, or 
+even personal favors. Bribery in any form, involving anyone at an FF G Organized Play event, is 
+strictly forbidden and warrants a Disqualification  from the Head Judge  for the player offering 
+the bribe. If the opponent accepts the bribe, they are also guilty of this disruption and should 
+suffer the same penalty.  
+ 
+Collusion  occurs whenever two or more players discuss an outcome for their game before the 
+game’s conclusion and then artificially or randomly determine the results of the game based on 
+that discussion. Collusion can take place at any time, even between tournament rounds, and is 31 
+ never tolerated. Collusion violates the integrity of a tournament as a whole by invalidating the 
+efforts of those who earned their place in the standings purely through the skill of their gameplay. 
+This can drastically decrease the enjoyability of the even t as a whole, and thus collusion warrants 
+a Disqualification for each player involved.   
+ 
+Note: The act of dividing up prizes between one or more players —often referred to as 
+“prize splitting” —is considered a form of collusion and therefore is not acceptable at any 
+level of Organized Play event.  
+ 
+Please note that concession, in and of itself, is not collusion . Players are allowed to concede a 
+game at any time before the end of the game , so long as there was no discussion or solicitation 
+involved. However, convincing or manipulating an opponent to concede in order to give any 
+person a distinct advantage is dishonest and is considered a form of cheating. Asking an 
+opponent to concede in a ny shape or form falls under collusion and is grounds for 
+Disqualification . 
+ 
+The following are some examples of collusion:  
+1. A player offers to concede to their opponent in return for some of the prizes their 
+opponent will win.  
+a. This is also a form of bribery.  
+2. Two players realize that they both will make the top cut regardless of who wins. After 
+discussing it with each other, they decide to randomly determine the outcome of their 
+game rather than play it out.  
+a. As soon as there is discussion, the integrity of the game has been lost. If players 
+do not want to play the game, then one of them should concede.  
+3. Player A and Player B are friends. Player A is already going to advance to the top cut, 
+but Player B needs one more win to do so. After discussing it with each other, Player A 
+offers to concede so that Player B can also advance, and Player B agrees.  
+a. As soon as there is discussion, the integrity of the game has been lost. Player A is 
+allowed to concede the game at any time, but should do so without  soliciting the 
+concession.  
+ 
+For the purpose of determining collusion, a “discussion” is when the involved players negotiate 
+and agree upon an outcome of some sort. It is largely up to a Judge’s interpretation whether or 
+not a particular conversation between players is a discussion le ading to collusion.  
+ 
+Note: If one player attempts collude with another player  and the other player refuses , this is 
+“attempted collusion .” The player who attempted to collude receives an Escalated Penalty, 
+while the player who refused receives no penalty.  
+ 
+3.8-F. Stalling  32 
+ Stalling occurs when a player intentionally  plays slowly  in order to exploit an advantage they 
+could gain from the time limit. If a player is unintentionally playing slowly , this falls under the 
+3.6 Slow Play section.  
+ 
+To determine whether a player is actively stalling, consider the following:  
+• The player takes an extremely long time to perform  each game action (1 minute or 
+longer) , even when there are few  actions they can legally perform  in the current game 
+state.  
+o Remember , a “game action” is any single gameplay -related action , such as 
+playing a card or triggering an ability.  
+• The player continues to play slowly even after receiving a slow play penalty and 
+instructions from a Floor Judge to speed up . 
+• A player is playing at a normal pace, then suddenly slows down when they realize the 
+tournament round is nearing the time limit.  
+• A player repeatedly asks for updates on public information  (such as how many cards are 
+left in their opponent’s deck)  within a short period of time.  
+ 
+Stalling is a form of cheating, and  thus warrants the same level of penalty. If a Floor Judge can 
+confirm that a player is stalling, then th ey should inform the Head Judge, who should Disqualify  
+the offending player.  
+ 
+3.8-G. Vandalism and Theft  
+Just as people come to FFG Organized Play events with the expectation of their personal safety, 
+they also come expecting their belongings to remain safe as well. FFG will not tolerate the 
+destruction or theft of other people’s belongings at FFG Organized Pl ay events. If a person 
+destroys or renders unusable any items  belonging to another person, the offending person should  
+be asked to leave the venue immediately. If that person was a player, the Head Judge  should also 
+immediately Disqualify  that player from  the event.   
+ 
+If a person is discovered to have stolen any items belonging to another person, they should  be 
+asked to return the belongings to their original owner, then they should  be asked to leave the 
+event venue.  If that person was a player, the Head Judge  should also immediately Disqualify  that 
+player from the event.   
+ 
+3.8-H. Cheating  
+If a player attempts to gain advantage in the tournament by intentionally breaking a rule, lying to 
+tournament leaders, intentionally altering or misreporting match results, or somehow abusing any 
+other part of the system for their own benefit, they are gu ilty of cheating. Players attend FFG 
+Organized Play events in order to enjoy playing the games they love with like -minded 
+individuals. There are few things that can ruin an event more than  someone reaching  a high 
+position through exploitation and dishonest y.   
+ 33 
+ If a Floor  Judge verifies that a player is cheating or has cheated, then the Floor Judge must 
+immediately report it to the Head Judge . The Head Judge must then Disqualify the 
+offending player in order to preserve the integrity of the tournament and the other players. At 
+the end of the event, the cheating player and how they cheated should be reported to FFG OP.  
+ 
+Note: As a general rule, in order for a player to be confirmed as cheating, two criteria must 
+be met : first, the player must either be gaining an advantage or putting someone else at a 
+disadvantage; second, the person must be aware that what they are doing is against the rules. If 
+both of these criteria are not met, then the disruption might fall under a  different category and 
+should be addressed as such. That said, each instance is largely up to the Head Judge’s  
+interpretation and judgment . If a leader is uncertain whether or not a player is cheating or has 
+cheated, then they should consult with another leader about what action to take.  
+ 
+4. Time Extensions  
+Whenever a disruption occurs —regardless if it is a Gameplay Disruption , an Event Disruption , 
+or even just a routine deck check —the subsequent Judge involvement  can take time away from 
+the players to complete their match. Because of this,  the Judge(s) resolving the issue should 
+bestow a time extension  to the players , with the exact form of extension depending on the 
+situation at hand:  
+ 
+Gameplay Disruptions  – All Gameplay Disruptions should be given a 1 -to-1 time extension , 
+rounded up to the nearest minute.  
+ 
+Event Disruptions  – Only the following Event Disruptions warrant a time extension : 
+• Tardiness  
+o If a player arrives within 1 to 5 minutes late and a Game Loss has not been given, 
+the match should be given a 1 -to-1 time extension, rounded up to the nearest 
+minute.  
+o If a player arrives within 6 to 10 minutes late and a Game Loss has been given, 
+for game 1, the match  should be given a 1 -to-1 time extension , rounded up to the 
+nearest minute.  
+• Slow Play  
+o If a player earns a penalty for unintentional slow play, the match should be given 
+a 1-to-1 time extension, rounded up to the nearest minute.  
+o Reminder : Intentional slow play is considered stalling, which is a form of 
+cheating. As such, the offending player should be Disqualified, and thus the match 
+does not warrant a time extension.  
+ 
+Deck Checks  – Whenever a Judge performs a deck check, the match should be given a 1 -to-1 
+time extension (rounded up to the nearest minute), plus an additional 3 minutes to allow players 
+to set up for their game.  
+  34 
+ Appendix: Warning Guidelines  
+Infraction  Penalty  Things to Keep in Mind  
+Gameplay Disruptions  
+Flagged Gameplay Error  
+A player indicates a gameplay 
+mistake was made by their 
+opponent , and it only takes the 
+judge a minute or two to correct the 
+error.  Tracking Penalty  
+(0 penalty points – 
+see right)  This is mainly to be used as a tracking system. It is 
+up to the Judge to determine if this is malicious 
+behavior.  
+Minor Gameplay Error  
+A simple, honest gameplay mistake 
+was made, and it only takes the 
+judge a minute or two to identify 
+and correct the error . Warning Penalty  
+(1 penalty point)  If the player keeps making these mistakes, then 
+issuing Escalated Warnings  is appropriate.  
+If a ruling for this level of penalty takes more than 
+3 minutes to correct the error, consider escalating 
+the penalty points to an Escalated Penalty point 
+value.  
+Intermediate Gameplay Error  
+A larger gameplay mistake or 
+multiple smaller mistakes were 
+made, and it takes the judge a 
+decent amount of time to correct the 
+error, possibly necessitating a time 
+extension for the game . Escalated Penalty  
+(2 penalty points)  If a ruling for this level of penalty takes more than 
+5 minutes to correct  the error, consider escalating 
+the penalty points to a Severe Penalty point value.  
+Significant Gameplay Error  
+A significant, possibly long -lasting 
+gameplay mistake or several larger 
+mistakes were made, and it takes 
+the judge a significant amount of 
+time to correct the error (if they can 
+at all).  Severe Penalty  
+(4 penalty points)  If the integrity of the game has been irrevocably 
+compromised, then the judge may want to consider 
+issuing a Game Loss in addition to a Severe 
+Penalty .  
+Event Disruptions  
+Tardiness  
+A player is late to their match 
+without notifying a judge 
+beforehand.  Escalated Penalty  
+(2 penalty points)  “Late” is defined as between 1 and 5 minutes late . 
+Absence  
+A player does not show up within 
+reasonable time for their match.  Game/ Match Loss , 
+Severe Penalty  
+(4 penalty points)  If a player is 5 or more minutes  late, they are 
+absent , and receive a Game Loss. If that player is 
+10 minutes late, they receive a Match Loss, th ey 
+receive a Severe Penalty, and are dropped from the 
+tournament.  
+Deck and/or  Deck  List Errors  
+A player’s deck  and/or  deck  list is 
+found to contain an unintentional 
+error or illegality.  (see pgs. 21 and 22) The issued penalty depends on  the type of error 
+and when it is discovered. Regardless of which  
+penalty is issued, the player must fix the error as 
+soon as it’s discovered.  
+ 
+For information on how to fix these errors, see 
+pages 21 and 22 of this document.  
+Marked Cards  
+A player has distinctive markings 
+on one or more of their 
+cards/sleeves.  Escalated Penalty  
+(2 penalty points)  In addition to receiving the penalty, the player 
+should replace the card/sleeves with an unmarked 
+version.  
+Card Manipulation Error  
+A player accidentally draws more 
+cards than they were supposed to , 
+reveals more cards than they were 
+supposed to, or otherwise  disrupts Escalated Penalty  
+(2 penalty points)  In addition to issuing  the penalty, the Judge must 
+also investigate and resolve the situation with the 
+goal of allowing the game to continue as it should 
+have before the incident when possible (see 
+section 3.5 for more information).  35 
+ the game through mistakes made in  
+card-related aspects . Reminder: If a Judge needs to shuffle cards into a 
+deck, this does not count as an in -game shuffle.  
+Slow Play  
+A player is unintentionally taking 
+more time than necessary to 
+perform one or more game actions.  Escalated Penalty   
+(2 penalty points)  This infraction is in reference to unintentional  
+slow play.  
+Intentional  slow play (stalling) is a form of 
+cheating and should be penalized as such . See 
+pages 24 and 29 for more information.  
+Minor Unsporting Conduct  
+A player acts in a way that causes 
+tension or awkwardness among 
+their table and neighbors . Severe Penalty  
+(4 penalty points)  Most behavioral infractions should be dealt with 
+on a case -by-case basis —depending on the 
+circumstances, the penalty may be upgraded to an 
+Extreme Penalty or downgraded to an Escalated 
+Penalty . 
+Major Unsporting Conduct  
+A player causes a major disturbance 
+that threatens to sour the experience  
+for any number of  attendees, 
+necessitates a significant amount of 
+judge intervention/involvement, 
+and/or blatantly ruins the event for 
+one or more people.  Disqualification  All forms of harassment fall under this category, 
+regardless of apparent severity.  
+If a player commits a particularly serious offense, 
+then they should be removed from the venue in 
+addition to being Disqualified . 
+ 
+Aggressive Behavior  
+A player  makes any sort of 
+aggressive moves toward a nother 
+person or their property at the event 
+or threatens to do so.  Disqualification  Aggressive or threatening behavior will not be 
+tolerated at FFG OP events. Anyone who commits 
+such an offense should be Disqualified and 
+removed from the venue.  
+Bribery and Collusion  
+A player offers another player some 
+sort of reward or favor in exchange 
+for altering the results of a match 
+(bribery), or two or more players 
+discuss an outcome of the match 
+that would be favorable and then 
+causing that outcome without 
+playing out the game (collusion) . Disqualification  For more detailed information to define bribery 
+and/or collusion and help determine if either has 
+occurred, see pages 27 -29. 
+Vandalism and Theft  
+A player damages or steals another 
+player’s belongings.  Disqualification  The vandalism or theft of other people’s 
+belongings will not be tolerated at FFG OP events.  
+Anyone who commits either act should be 
+removed from the event venue.  
+Cheating  
+A player attempts to gain advantage  
+in the tournament through 
+dishonesty, tampering with results, 
+exploitation, or intentional rule -
+breaking.  Disqualification  A player is cheating if their actions are intentional , 
+and they can gain an unfair advantage  through 
+them. Things like unwitting slow play or 
+accidentally drawing an extra card are not 
+cheating —doing those things a second time after 
+being given a penalty , however, very well could be 
+cheating.  
+Repeated Infraction  
+A “second offense,” the player has 
+committed the same infraction that 
+they were penalized for earlier in 
+the event and needs to receive 
+another penalty.  Same penalty as 
+before, but upgraded 
+one step  Warning Penalties  upgrade to Escalated Penalties . 
+Escalated Penalties  upgrade to Severe Penalties . 
+Severe Penalties upgrade to Extreme Penalties . 
+Extreme Penalties upgrade to Disqualification.  
+ 
+During Casual -tier events, a judge may decide not 
+to upgrade the penalty when a player repeats a 
+minor gameplay error. The penalty for repeated 
+behavioral infractions  is always  upgraded, 
+regardless of event tier.  36 
+ Too Many Penalty Points  
+The player has 10 or more penalty 
+points throughout the event.  Disqualification  Warning Penalties  are worth 1 penalty point.  
+Escalated Penalties  are worth 2 penalty points.  
+Severe Penalties  are worth 4 penalty points.  
+Extreme Penalties are worth 8 penalty points.  
+ 
+ 

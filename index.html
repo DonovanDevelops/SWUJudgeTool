@@ -1,6 +1,5 @@
 <html>
     <head>
-        <link rel="manifest" href="manifest.json">
         <title>Star Wars: Unlimited Offline Judge Tool</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +12,13 @@
         <div class="stickyContent">
             <h1>Star Wars: Unlimited Judge Tool</h1>
             <nav>
-                <div id="cardDataTab" class="activeTab" onclick="$('.contentContainer').hide();$('#cardDataContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Cards</div>
-                <div id="ruleDataTab" onclick="$('.contentContainer').hide(); $('#ruleDataContainer').show(); $(this).addClass('activeTab'); $('#cardDataTab').removeClass('activeTab');">Additional Rulings</div>
-                <div id="crDataTab" onclick="$('.contentContainer').hide();$('#crContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">CR</div>
-                <div id="medDataTab" onclick="$('.contentContainer').hide();$('#medContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">MED</div>
-                <div id="trDataTab" onclick="$('.contentContainer').hide();$('#trContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">TR</div>
-                <div id="clarificationDataTab" onclick="$('.contentContainer').hide();$('#ruleClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Rules Clarifications</div>
-                <div id="policyDataTab" onclick="$('.contentContainer').hide();$('#policyClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Policy Clarifications</div>
+                <div id="cardDataTab" class="activeTab" onclick="$('#searchInput').prop('disabled', false);$('.contentContainer').hide();$('#cardDataContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Cards</div>
+                <div id="ruleDataTab" onclick="$('#searchInput').prop('disabled', false);$('.contentContainer').hide();$('.activeTab').removeClass('activeTab');$('#ruleDataContainer').show(); $(this).addClass('activeTab');">Additional Rulings</div>
+                <div id="crDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#crContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">CR</div>
+                <div id="medDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#medContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">MED</div>
+                <div id="trDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#trContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">TR</div>
+                <div id="clarificationDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#ruleClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Rules Clarifications</div>
+                <div id="policyDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#policyClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Policy Clarifications</div>
             </nav>
             <search>
                 <input type="text" id="searchInput" placeholder="Search in Cards and Additional Rulings..." oninput="updateSearch();">
@@ -35,16 +34,28 @@
                 <div class="sectionContent" id="ruleContent"></div> 
             </div>
             <div class="contentContainer" id="crContainer" style="display:none;">
-                <a href="Rules Documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf">View File</a>
-                <embed src="Rules Documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%" download>
+                <!--<a href="Rules Documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf">View File</a>
+                <embed src="Rules Documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%" download>-->
+                <object data="Rules Documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%">
+                    <param name="download" value="true">
+                    <div id="crFallback"></div>
+                </object>
             </div>
             <div class="contentContainer" id="medContainer" style="display:none;">
-                <a href="Rules Documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf">View File</a>
-                <embed src="Rules Documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%" download>
+                <!--<a href="Rules Documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf">View File</a>
+                <embed src="Rules Documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%" download>-->
+                <object data="Rules Documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%">
+                    <param name="download" value="true">
+                    <div id="medFallback"></div>
+                </object>
             </div>
             <div class="contentContainer" id="trContainer" style="display:none;">
-                <a href="Rules Documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf">View File</a>
-                <embed src="Rules Documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%" download>
+                <!--<a href="Rules Documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf">View File</a>
+                <embed src="Rules Documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%" download>-->
+                <object data="Rules Documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%">
+                    <param name="download" value="true">
+                    <div id="trFallback"></div>
+                </object>
             </div>
             <div class="contentContainer" id="ruleClarificationContainer" style="display:none;">
                 <div>Coming Soon!</div>
@@ -391,6 +402,12 @@
                 box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.1);
                 font-family: 'Space Mono', monospace;
             }
+            search input:disabled {
+                background-color: #f3f3f3;
+                box-shadow: inset 0px 0px 0.5rem rgba(0, 0, 0, 0.1);
+                color: #ABABAB;
+                cursor: not-allowed;
+            }
             .sectionDescription {
                 border-bottom: 1px solid #000000;
                 padding: 1rem;
@@ -727,6 +744,17 @@
                     $('#ruleClarificationContainer > div').html(fixedMd);
                 }
             });
+
+            const txtFiles = ['rule_text/cr.txt', 'rule_text/med.txt', 'rule_text/tr.txt'];
+            const txtDivs = ['crFallback', 'medFallback', 'trFallback'];
+            for (let i = 0; i < txtFiles.length; i++) {
+                fetch(txtFiles[i])
+                    .then(response => response.text())
+                    .then(text => {
+                        $('#' + txtDivs[i]).html(text);
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
         </script>
     </body>
 </html>
