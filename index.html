@@ -36,26 +36,26 @@
             <div class="contentContainer" id="crContainer" style="display:none;">
                 <!--<a href="Rules Documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf">View File</a>
                 <embed src="Rules Documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%" download>-->
-                <object data="Rules Documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%">
+                <object onerror="$(this).hide();$('#crFallback').show();" data="Rules Documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
-                    <div id="crFallback"></div>
                 </object>
+                <div id="crFallback" style="display: none;"></div>
             </div>
             <div class="contentContainer" id="medContainer" style="display:none;">
                 <!--<a href="Rules Documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf">View File</a>
                 <embed src="Rules Documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%" download>-->
-                <object data="Rules Documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%">
+                <object onerror="$(this).hide();$('#medFallback').show();" data="Rules Documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
-                    <div id="medFallback"></div>
                 </object>
+                <div id="medFallback" style="display: none;"></div>
             </div>
             <div class="contentContainer" id="trContainer" style="display:none;">
                 <!--<a href="Rules Documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf">View File</a>
                 <embed src="Rules Documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%" download>-->
-                <object data="Rules Documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%">
+                <object onerror="$(this).hide();$('#trFallback').show();" data="Rules Documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
-                    <div id="trFallback"></div>
                 </object>
+                <div id="trFallback" style="display: none;"></div>
             </div>
             <div class="contentContainer" id="ruleClarificationContainer" style="display:none;">
                 <div>Coming Soon!</div>
@@ -732,6 +732,8 @@
                 return markdownLines.join('');
             }
 
+
+
             const rulesGistID = "256a534a98fc1d45f2595503f7d54953";
             const apiUrl = `https://api.github.com/gists/${rulesGistID}`;
             fetch(apiUrl) 
@@ -752,8 +754,7 @@
                     .then(response => response.text())
                     .then(text => {
                         $('#' + txtDivs[i]).html(text);
-                    })
-                    .catch(error => console.error('Error:', error));
+                    });
             }
         </script>
     </body>
