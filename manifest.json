@@ -3,7 +3,7 @@
     "name": "Star Wars: Unlimited Offline Judge Tool",
     "icons": [
       {
-        "src": "/images/SWU_Judge_Small.jpg",
+        "src": "images/SWU_Judge_Small.jpg",
         "sizes": "256x256",
         "type": "image/jpg"
       }
