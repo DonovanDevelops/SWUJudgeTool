@@ -1,0 +1,19 @@
+{
+    "short_name": "SWU Judge Tool",
+    "name": "Star Wars: Unlimited Offline Judge Tool",
+    "icons": [
+      {
+        "src": "/images/SWU_Judge_Small.jpg",
+        "sizes": "256x256",
+        "type": "image/jpg"
+      }
+    ],
+    "cache": {
+      "urls": [
+        "Rules Documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf",
+        "Rules Documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf",
+        "Rules Documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf"
+      ]
+    },
+    "start_url": "/"
+  }
