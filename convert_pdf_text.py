@@ -23,9 +23,9 @@ def pdf_to_text(inputs, outputs):
 if __name__ == "__main__":
     doc_names = ['rule_text/cr.txt', 'rule_text/med.txt', 'rule_text/tr.txt']
     doc_array = [
-        'Rules Documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf',
-        'Rules Documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf',
-        'Rules Documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf'
+        'rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf',
+        'rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf',
+        'rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf'
     ]
 
     pdf_to_text(doc_array, doc_names)
