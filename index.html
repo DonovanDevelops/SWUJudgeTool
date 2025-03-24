@@ -38,7 +38,7 @@
                 <div class="sectionContent" id="ruleContent"></div> 
             </div>
             <div class="contentContainer" id="crContainer" style="display:none;">
-                <a href="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf">Direct Link to PDF</a>
+                <div><a href="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf">Direct Link to PDF</a></div>
                 <!--<embed src="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%" download>-->
                 <object onerror="$(this).hide();$('#crFallback').show();" data="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
@@ -46,7 +46,7 @@
                 <div id="crFallback" style="display: none;"></div>
             </div>
             <div class="contentContainer" id="medContainer" style="display:none;">
-                <a href="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf">Direct Link to PDF</a>
+                <div><a href="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf">Direct Link to PDF</a></div>
                 <!--<embed src="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%" download>-->
                 <object onerror="$(this).hide();$('#medFallback').show();" data="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
@@ -54,7 +54,7 @@
                 <div id="medFallback" style="display: none;"></div>
             </div>
             <div class="contentContainer" id="trContainer" style="display:none;">
-                <a href="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf">Direct Link to PDF</a>
+                <div><a href="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf">Direct Link to PDF</a></div>
                 <!--<embed src="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%" download>-->
                 <object onerror="$(this).hide();$('#trFallback').show();" data="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
@@ -62,10 +62,10 @@
                 <div id="trFallback" style="display: none;"></div>
             </div>
             <div class="contentContainer" id="ruleClarificationContainer" style="display:none;">
-                <div>Coming Soon!</div>
+                <div class="sectionContent">Coming Soon!</div>
             </div>
             <div class="contentContainer" id="policyClarificationContainer" style="display:none;">
-                <div id="updatePolicyInsideHere">
+                <div class="sectionContent" id="updatePolicyInsideHere">
                     <div class="container">
                         <h2>Disclaimer</h2>
                         While these rulings and philosophies are coming from knowledgeable sources (most frequently coming from developers of the game), they are <b>subject to change</b> with updates to the tournament regulations and master event document. These generally represent the Rules As Intended and may be included in future updates to those documents.
@@ -483,7 +483,10 @@
                 height: 60vh;
                 margin-top: 2rem;
             }
-            contentcontainer {
+            .contentContainer > div:not(.sectionDescription):not(.sectionContent) {
+                margin-top: 2rem;
+            }
+            .contentcontainer {
                 max-width: 100%;
                 width: 100%;
                 overflow-wrap: break-word;
