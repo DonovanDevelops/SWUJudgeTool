@@ -38,30 +38,30 @@
                 <div class="sectionContent" id="ruleContent"></div> 
             </div>
             <div class="contentContainer" id="crContainer" style="display:none;">
-                <div><a href="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf">Direct Link to PDF</a></div>
+                <div><a class="pdfLink" href="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf">Direct Link to PDF</a></div>
                 <!--<embed src="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%" download>-->
                 <object onerror="$(this).hide();$('#crFallback').show();" data="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
                 </object>
-                <div>If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
+                <div class="pdfMessage">If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
                 <div id="crFallback" style="display: none;"></div>
             </div>
             <div class="contentContainer" id="medContainer" style="display:none;">
-                <div><a href="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf">Direct Link to PDF</a></div>
+                <div><a class="pdfLink" href="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf">Direct Link to PDF</a></div>
                 <!--<embed src="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%" download>-->
                 <object onerror="$(this).hide();$('#medFallback').show();" data="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
                 </object>
-                <div>If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
+                <div class="pdfMessage">If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
                 <div id="medFallback" style="display: none;"></div>
             </div>
             <div class="contentContainer" id="trContainer" style="display:none;">
-                <div><a href="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf">Direct Link to PDF</a></div>
+                <div><a class="pdfLink" href="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf">Direct Link to PDF</a></div>
                 <!--<embed src="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%" download>-->
                 <object onerror="$(this).hide();$('#trFallback').show();" data="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
                 </object>
-                <div>If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
+                <div class="pdfMessage">If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
                 <div id="trFallback" style="display: none;"></div>
             </div>
             <div class="contentContainer" id="ruleClarificationContainer" style="display:none;">
@@ -500,6 +500,15 @@
             }
             #ruleClarificationContainer h2, #ruleClarificationContainer h3, #policyClarificationContainer h2, #policyClarificationContainer h3 {
                 margin: 0;
+            }
+            .pdfLink {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+            .pdfMessage {
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: #e91e24;
             }
 
             /* Responsive Styling */
