@@ -628,8 +628,8 @@
                             
                         for (let i = 0; i < cardInfo.versions.length; i++) {
                             cardListHTML += '<div class="cardInfoBox">' +
-                                    (cardInfo.versions[i].front_image !== '' ? '<img loading="lazy" class="cardImage frontImage" src="' + cardInfo.versions[i].front_image + '" alt="' + cardKey + ' - Front" />' : '') +
-                                    (cardInfo.versions[i].back_image !== '' ? '<img loading="lazy" class="cardImage backImage" src="' + cardInfo.versions[i].back_image + '" alt="' + cardKey + ' - Back" />' : '') +
+                                    (cardInfo.versions[i].front_image !== '' ? '<img class="cardImage frontImage" src="' + cardInfo.versions[i].front_image + '" alt="' + cardKey + ' - Front" />' : '') +
+                                    (cardInfo.versions[i].back_image !== '' ? '<img class="cardImage backImage" src="' + cardInfo.versions[i].back_image + '" alt="' + cardKey + ' - Back" />' : '') +
                                     (cardInfo.versions[i].text !== '' ? '<div><strong>Card Text:</strong> ' + cardInfo.versions[i].text.replaceAll("'", "\'") + '</div>' : '') +
                                     (cardInfo.versions[i].deploy_box !== '' ? '<div><strong>Deploy Box Text:</strong> ' + cardInfo.versions[i].deploy_box.replaceAll("'", "\'") + '</div>' : '') +
                                     (cardInfo.versions[i].epic_action !== '' ? '<div><strong>Epic Action Text:</strong> ' + cardInfo.versions[i].epic_action.replaceAll("'", "\'") + '</div>' : '') +
@@ -769,7 +769,7 @@
             // Uses https://www.adobe.com/acrobat/online/pdf-to-jpg.html to convert a PDF to a png per page.
             docLoaded = function(docType) {
                 const pdfDoc = $('#' + docType + 'Container > object').contents();
-                console.log(pdfDoc);
+                //console.log(pdfDoc);
 
                 var hasDoc = false;
                 for (let i = 0; i < pdfDoc.length; i++) {
@@ -827,10 +827,11 @@
             }
 
             main();
-
+            /*
             $(document).ready(function() {
                 $('img[loading="lazy"]').attr('loading', 'auto');
             });
+            */
         </script>
     </body>
 </html>
