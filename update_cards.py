@@ -7,6 +7,7 @@
 import requests
 import datetime
 import json
+import time
 
 # Function to get all cards from the SWU API
 # Returns an array of card objects and their associated data
@@ -36,6 +37,7 @@ def get_card_data():
             response = session.get(page_url)
             pages.append(response.json()['data'])
             print(f'Finished page {i} of {total_pages}.')
+            time.sleep(1)
 
         # Smush the pages into a single array
         cards = [item for sublist in pages for item in sublist]
