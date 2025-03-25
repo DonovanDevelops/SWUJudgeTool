@@ -19,9 +19,9 @@
             <nav>
                 <div id="cardDataTab" class="activeTab" onclick="$('#searchInput').prop('disabled', false);$('.contentContainer').hide();$('#cardDataContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Cards</div>
                 <div id="ruleDataTab" onclick="$('#searchInput').prop('disabled', false);$('.contentContainer').hide();$('.activeTab').removeClass('activeTab');$('#ruleDataContainer').show(); $(this).addClass('activeTab');">Additional Rulings</div>
-                <div id="crDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#crContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">CR</div>
-                <div id="medDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#medContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">MED</div>
-                <div id="trDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#trContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">TR</div>
+                <div id="crDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#crContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');docLoaded($('#crConatiner > object'), 'cr')">CR</div>
+                <div id="medDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#medContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');docLoaded($('#medContainer > object'), 'med');">MED</div>
+                <div id="trDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#trContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');docLoaded($('#trConatiner > object'), 'tr');">TR</div>
                 <div id="clarificationDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#ruleClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Rules Clarifications</div>
                 <div id="policyDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#policyClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Policy Clarifications</div>
             </nav>
@@ -59,7 +59,7 @@
             <div class="contentContainer" id="trContainer" style="display:none;">
                 <div><a class="pdfLink" href="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf">Direct Link to PDF</a></div>
                 <!--<embed src="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%" download>-->
-                <object onload="docLoaded(this, 'cr');" onerror="$(this).hide();$('#trFallback').show();" data="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%">
+                <object onload="docLoaded(this, 'tr');" onerror="$(this).hide();$('#trFallback').show();" data="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
                 </object>
                 <div class="pdfMessage">If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
@@ -511,6 +511,17 @@
                 font-size: 1.5rem;
                 color: #e91e24;
             }
+            #crFallback, #medFallback, #trFallback {
+                max-height: 60vh;
+                overflow: auto;
+                max-width: 100%;
+            }
+            #crFallback > div, #medFallback > div, #trFallback > div {
+                max-width: 100%;
+            }
+            #crFallback > div > img, #medFallback > div > img, #trFallback > div > img {
+                max-width: 100%;
+            }
 
             /* Responsive Styling */
             @media screen and (max-width: 1024px) {
@@ -767,9 +778,14 @@
                     }
                 }
 
+                console.log(hasDoc);
+
                 if (!hasDoc) {
                     $('#' + docType + 'Container > object').hide();
                     $('#' + docType + 'Fallback').show();
+                } else {
+                    $('#' + docType + 'Container > object').show();
+                    $('#' + docType + 'Fallback').hide();
                 }
             }
 
