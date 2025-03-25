@@ -7,6 +7,7 @@
         <link rel="icon" href="images/judge.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="cards_data.js"></script>
+        <script src="pdf_images.js"></script>
         <script type="text/javascript" src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
         <meta http-equiv="Content-Disposition" content="attachment; filename=rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf">
         <meta http-equiv="Content-Disposition" content="attachment; filename=rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf">
@@ -40,29 +41,29 @@
             <div class="contentContainer" id="crContainer" style="display:none;">
                 <div><a class="pdfLink" href="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf">Direct Link to PDF</a></div>
                 <!--<embed src="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%" download>-->
-                <object onerror="$(this).hide();$('#crFallback').show();" data="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%">
+                <object onload="docLoaded(this, 'cr');" onerror="$(this).hide();$('#crFallback').show();" data="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
                 </object>
                 <div class="pdfMessage">If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
-                <div id="crFallback" style="display: none;"></div>
+                <div id="crFallback" style="display: none;"><div></div></div>
             </div>
             <div class="contentContainer" id="medContainer" style="display:none;">
                 <div><a class="pdfLink" href="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf">Direct Link to PDF</a></div>
                 <!--<embed src="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%" download>-->
-                <object onerror="$(this).hide();$('#medFallback').show();" data="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%">
+                <object onload="docLoaded(this, 'cr');" onerror="$(this).hide();$('#medFallback').show();" data="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
                 </object>
                 <div class="pdfMessage">If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
-                <div id="medFallback" style="display: none;"></div>
+                <div id="medFallback" style="display: none;"><div></div></div>
             </div>
             <div class="contentContainer" id="trContainer" style="display:none;">
                 <div><a class="pdfLink" href="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf">Direct Link to PDF</a></div>
                 <!--<embed src="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%" download>-->
-                <object onerror="$(this).hide();$('#trFallback').show();" data="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%">
+                <object onload="docLoaded(this, 'cr');" onerror="$(this).hide();$('#trFallback').show();" data="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
                 </object>
                 <div class="pdfMessage">If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
-                <div id="trFallback" style="display: none;"></div>
+                <div id="trFallback" style="display: none;"><div></div></div>
             </div>
             <div class="contentContainer" id="ruleClarificationContainer" style="display:none;">
                 <div class="sectionContent">Coming Soon!</div>
@@ -569,6 +570,11 @@
         </style>
         <script>
             var cardData = window.projectNamespace.cardData;
+            var pdfImages = {
+                cr: window.projectNamespace.cr,
+                med: window.projectNamespace.med,
+                tr: window.projectNamespace.tr
+            };
 
             function updateSearch() {
                 const searchText = $('#searchInput').val().toLowerCase();
@@ -611,8 +617,8 @@
                             
                         for (let i = 0; i < cardInfo.versions.length; i++) {
                             cardListHTML += '<div class="cardInfoBox">' +
-                                    (cardInfo.versions[i].front_image !== '' ? '<img class="cardImage frontImage" src="' + cardInfo.versions[i].front_image + '" alt="' + cardKey + ' - Front" />' : '') +
-                                    (cardInfo.versions[i].back_image !== '' ? '<img class="cardImage backImage" src="' + cardInfo.versions[i].back_image + '" alt="' + cardKey + ' - Back" />' : '') +
+                                    (cardInfo.versions[i].front_image !== '' ? '<img loading="lazy" class="cardImage frontImage" src="' + cardInfo.versions[i].front_image + '" alt="' + cardKey + ' - Front" />' : '') +
+                                    (cardInfo.versions[i].back_image !== '' ? '<img loading="lazy" class="cardImage backImage" src="' + cardInfo.versions[i].back_image + '" alt="' + cardKey + ' - Back" />' : '') +
                                     (cardInfo.versions[i].text !== '' ? '<div><strong>Card Text:</strong> ' + cardInfo.versions[i].text.replaceAll("'", "\'") + '</div>' : '') +
                                     (cardInfo.versions[i].deploy_box !== '' ? '<div><strong>Deploy Box Text:</strong> ' + cardInfo.versions[i].deploy_box.replaceAll("'", "\'") + '</div>' : '') +
                                     (cardInfo.versions[i].epic_action !== '' ? '<div><strong>Epic Action Text:</strong> ' + cardInfo.versions[i].epic_action.replaceAll("'", "\'") + '</div>' : '') +
@@ -703,10 +709,7 @@
                 }
             }
             
-            createCardList();
-            createRulesList();
-
-            fixMarkdown = function(markdown) {
+            function fixMarkdown(markdown) {
                 const mdSplit = markdown.split('\n');
 
                 var markdownLines = [];
@@ -752,30 +755,61 @@
                 return markdownLines.join('');
             }
 
+            // Uses https://www.adobe.com/acrobat/online/pdf-to-jpg.html to convert a PDF to a png per page.
+            docLoaded = function(document, docType) {
+                const pdfDoc = $(document).contents();
 
-
-            const rulesGistID = "256a534a98fc1d45f2595503f7d54953";
-            const apiUrl = `https://api.github.com/gists/${rulesGistID}`;
-            fetch(apiUrl) 
-            .then(response => response.json())
-            .then(result => {
-                if (result.files["SWU_Resources.md"]["content"] !== undefined && result.files["SWU_Resources.md"]["content"] !== null) {
-                    const markdownContent = result.files["SWU_Resources.md"]["content"];
-
-                    const fixedMd = fixMarkdown(markdownContent);
-                    $('#ruleClarificationContainer > div').html(fixedMd);
+                var hasDoc = false;
+                for (let i = 0; i < pdfDoc.length; i++) {
+                    if ('nodeName' in pdfDoc[0] && pdfDoc[0].nodeName === '#document') {
+                        hasDoc = true;
+                        break;
+                    }
                 }
-            });
 
-            const txtFiles = ['rule_text/cr.txt', 'rule_text/med.txt', 'rule_text/tr.txt'];
-            const txtDivs = ['crFallback', 'medFallback', 'trFallback'];
-            for (let i = 0; i < txtFiles.length; i++) {
-                fetch(txtFiles[i])
-                    .then(response => response.text())
-                    .then(text => {
-                        $('#' + txtDivs[i]).html(text);
-                    });
+                if (!hasDoc) {
+                    $('#' + docType + 'Container > object').hide();
+                    $('#' + docType + 'Fallback').show();
+                }
             }
+
+            main = function () {
+                createCardList();
+                createRulesList();
+
+                const rulesGistID = "256a534a98fc1d45f2595503f7d54953";
+                const apiUrl = `https://api.github.com/gists/${rulesGistID}`;
+                fetch(apiUrl) 
+                .then(response => response.json())
+                .then(result => {
+                    if (result.files["SWU_Resources.md"]["content"] !== undefined && result.files["SWU_Resources.md"]["content"] !== null) {
+                        const markdownContent = result.files["SWU_Resources.md"]["content"];
+
+                        const fixedMd = fixMarkdown(markdownContent);
+                        $('#ruleClarificationContainer > div').html(fixedMd);
+                    }
+                });
+
+                for (const place in pdfImages) {
+                    if (pdfImages[place].length > 0) {
+                        
+                        var fallbackHTML = '';
+
+                        var sortedFiles = pdfImages[place].sort(function (a, b) {
+                            return parseInt(a.split('_')[a.split('_').length - 1]) - parseInt(b.split('_')[b.split('_').length - 1]);
+                        });
+                        for (let i = 0; i < sortedFiles.length; i++) {
+                            fallbackHTML += '<img src="rules_documents/' + place.toUpperCase() + '/' + sortedFiles[i] + '" />';
+                        }
+
+                        if (fallbackHTML != '') {
+                            $('#' + place + 'Fallback > div').html(fallbackHTML);
+                        }
+                    }
+                }
+            }
+
+            main();
         </script>
     </body>
 </html>
