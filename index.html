@@ -827,6 +827,10 @@
             }
 
             main();
+
+            $(document).ready(function() {
+                $('img[loading="lazy"]').attr('loading', 'auto');
+            });
         </script>
     </body>
 </html>
