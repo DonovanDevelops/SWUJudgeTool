@@ -376,7 +376,6 @@
                 --color-selected: #434248;
                 --color-link: #4abdb9;
                 --color-error: #c1191e;
-                --font-size: 14px;
                 --shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.3);
                 --shadow-inset: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
             }
@@ -594,20 +593,15 @@
                 }
             }
             @media screen and (max-width: 768px) {
-                html {
-                    --font-size: 16px;
-                }
                 div.content {
                     width: 480px;
                     margin: auto;
                 }
             }
-            @media screen and (max-device-width: 768px) {
+            @media screen and (max-width: 480px) {
                 html {
                     --font-size: 16px;
                 }
-            }
-            @media screen and (max-width: 480px) {
                 div.content {
                     width: 360px;
                     margin: auto;
