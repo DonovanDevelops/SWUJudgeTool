@@ -346,6 +346,40 @@
                 color: var(--color-text);
                 font-size: var(--font-size);
             }
+            html {
+                --background-color: #f6f6f6;
+                --background-header: #f6f6f6;
+                --color-darker: #ececec;
+                --color-disabled: #fbfaff;
+                --color-lighter: #ebebeb;
+                --color-input: #ffffff;
+                --color-placeholder: #d7d9d9;
+                --color-text: #2f2f2f;
+                --color-border: #dadada;
+                --color-selected: #d5d5d5;
+                --color-link: #4abdb9;
+                --color-error: #c1191e;
+                --font-size: 14px;
+                --shadow: 0px 0px 0.5rem rgba(201, 201, 201, 0.3);
+                --shadow-inset: inset 0px 0px 10px rgba(157, 157, 157, 0.3);
+            }
+            html.darkmode {
+                --background-color: #2f2e34;
+                --background-header: #29282d;
+                --color-darker: #29282d;
+                --color-disabled: #29282d;
+                --color-lighter: #343339;
+                --color-input: #343339;
+                --color-placeholder: #6f6d77;
+                --color-text: #d4d6da;
+                --color-border: #403f45;
+                --color-selected: #434248;
+                --color-link: #4abdb9;
+                --color-error: #c1191e;
+                --font-size: 14px;
+                --shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.3);
+                --shadow-inset: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+            }
             body {
                 margin: auto;
                 background-color: var(--background-color);
@@ -569,9 +603,6 @@
                 }
             }
             @media screen and (max-width: 480px) {
-                html {
-                    --font-size: 18px;
-                }
                 div.content {
                     width: 360px;
                     margin: auto;
@@ -612,41 +643,6 @@
             /* Scrollbar Button */
             ::-webkit-scrollbar-button {
                 display: none;
-            }
-
-            html {
-                --background-color: #f6f6f6;
-                --background-header: #f6f6f6;
-                --color-darker: #ececec;
-                --color-disabled: #fbfaff;
-                --color-lighter: #ebebeb;
-                --color-input: #ffffff;
-                --color-placeholder: #d7d9d9;
-                --color-text: #2f2f2f;
-                --color-border: #dadada;
-                --color-selected: #d5d5d5;
-                --color-link: #4abdb9;
-                --color-error: #c1191e;
-                --font-size: 14px;
-                --shadow: 0px 0px 0.5rem rgba(201, 201, 201, 0.3);
-                --shadow-inset: inset 0px 0px 10px rgba(157, 157, 157, 0.3);
-            }
-            html.darkmode {
-                --background-color: #2f2e34;
-                --background-header: #29282d;
-                --color-darker: #29282d;
-                --color-disabled: #29282d;
-                --color-lighter: #343339;
-                --color-input: #343339;
-                --color-placeholder: #6f6d77;
-                --color-text: #d4d6da;
-                --color-border: #403f45;
-                --color-selected: #434248;
-                --color-link: #4abdb9;
-                --color-error: #c1191e;
-                --font-size: 14px;
-                --shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.3);
-                --shadow-inset: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
             }
         </style>
         <script>
