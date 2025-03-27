@@ -1,4 +1,4 @@
-<html>
+<html class="darkmode">
     <head>
         <title>Star Wars: Unlimited Offline Judge Tool</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +27,7 @@
             </nav>
             <search>
                 <input type="text" id="searchInput" placeholder="Search in Cards and Additional Rulings..." oninput="updateSearch();">
+                <div id="colorToggle" class="darkmode" onclick="$(this).toggleClass('darkmode');$('#darkmode').toggle();$('html').toggleClass('darkmode');"><div></div></div>
             </search>
         </div>
         <div class="content">
@@ -43,7 +44,7 @@
                 <object onload="docLoaded('cr');" onerror="$(this).hide();$('#crFallback').show();" data="rules_documents/SWH_Comp_Rules_4_0_1994d2beb6.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
                 </object>
-                <div class="pdfMessage">If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
+                <div class="pdfMessage">If you are only able to see an image of the first page of the PDF or you see this message above the PDF, your browser does not support the PDF viewer. Please click the link above to view and download the PDF from there so it is available to you offline.</div>
                 <div id="crFallback" style="display: none;"><div></div></div>
             </div>
             <div class="contentContainer" id="medContainer" style="display:none;">
@@ -51,7 +52,7 @@
                 <object onload="docLoaded('cr');" onerror="$(this).hide();$('#medFallback').show();" data="rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
                 </object>
-                <div class="pdfMessage">If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
+                <div class="pdfMessage">If you are only able to see an image of the first page of the PDF or you see this message above the PDF, your browser does not support the PDF viewer. Please click the link above to view and download the PDF from there so it is available to you offline.</div>
                 <div id="medFallback" style="display: none;"><div></div></div>
             </div>
             <div class="contentContainer" id="trContainer" style="display:none;">
@@ -59,7 +60,7 @@
                 <object onload="docLoaded('tr');" onerror="$(this).hide();$('#trFallback').show();" data="rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
                 </object>
-                <div class="pdfMessage">If you are only able to see an image of the first page of the PDF, it means that your browser does not support the PDF viewer. Please click the link to view and download the PDF from there.</div>
+                <div class="pdfMessage">If you are only able to see an image of the first page of the PDF or you see this message above the PDF, your browser does not support the PDF viewer. Please click the link above to view and download the PDF from there so it is available to you offline.</div>
                 <div id="trFallback" style="display: none;"><div></div></div>
             </div>
             <div class="contentContainer" id="ruleClarificationContainer" style="display:none;">
@@ -338,23 +339,24 @@
         </content>
         <style>
             html {
-                background-color:#000000;
+                background-color: var(--background-color);
                 font-family: "Space Mono", monospace !important;
                 font-weight: 400;
-                font-size: 12px;
                 font-style: normal;
+                color: var(--color-text);
+                font-size: var(--font-size);
             }
             body {
                 margin: auto;
-                background-color: #ffffff;
+                background-color: var(--background-color);
                 padding: 0;
                 box-sizing: border-box;
             }
             .stickyContent {
                 position: sticky;
                 top: 0;
-                background-color: #ffffff;
-                border-bottom: 1px solid #000000;
+                background-color: var(--background-header);
+                border-bottom: 1px solid var(--color-border);
                 padding: 1rem;
                 box-sizing: border-box;
             }
@@ -368,7 +370,7 @@
                 flex-direction: row;
                 justify-content: flex-start;
                 gap: 0.5rem;
-                border-bottom: 1px solid #000000;
+                border-bottom: 1px solid var(--color-border);
                 width: 100%;
                 padding-bottom: 1rem;
                 margin-bottom: 1rem;
@@ -379,12 +381,15 @@
             nav > div {
                 cursor: pointer;
                 padding: 0.25rem 0.5rem;
-                border: 1px solid #000000;
+                border: 1px solid var(--color-border);
                 border-radius: 0.25rem;
-                box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.1);
+                box-shadow: var(--shadow);
             }
             .activeTab {
-                background-color: #cccccc;
+                background-color: var(--color-selected);
+            }
+            a {
+                color: var(--color-link);
             }
             search {
                 width: 100%;
@@ -398,23 +403,50 @@
             search ::placeholder {
                 font-family: 'Space Mono', monospace;
                 font-size: 0.75rem;
+                color: var(--color-placeholder);
             }
             search input {
                 width: 100%;
                 padding: 0.5rem 0.5rem;
-                border: 1px solid #000000;
+                border: 1px solid var(--color-border);
                 border-radius: 0.25rem;
-                box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.1);
+                box-shadow: var(--shadow);
                 font-family: 'Space Mono', monospace;
+                background-color: var(--color-input);
+                color: var(--color-text);
             }
             search input:disabled {
-                background-color: #f3f3f3;
-                box-shadow: inset 0px 0px 0.5rem rgba(0, 0, 0, 0.1);
+                background-color: var(--color-disabled);
+                box-shadow: var(--shadow-inset);
                 color: #ABABAB;
                 cursor: not-allowed;
             }
+            #colorToggle {
+                height: 2.5rem;
+                width: 2.5rem;
+                border-radius: 0.25rem;
+                box-shadow: var(--shadow);
+                background-color: #535353;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            #colorToggle.darkmode {
+                background-color: #efefef;
+            }
+            #colorToggle > div {
+                height: 60%;
+                width: 60%;
+                border-radius: 2rem;
+                background-color: #858585;
+            }
+            #colorToggle.darkmode > div {
+                background-color: #cdcdcd;
+            }
             .sectionDescription {
-                border-bottom: 1px solid #000000;
+                border-bottom: 1px solid var(--color-border);
                 padding: 1rem;
             }
             .sectionContent {
@@ -430,10 +462,10 @@
                 border-radius: .5rem;
             }
             .cardItem:hover {
-                background-color: #cccccc;
+                background-color: var(--color-darker);
             }
             .activeItem {
-                background-color: #aaaaaa;
+                background-color: var(--color-selected);
             }
             .cardInfo {
                 display: flex;
@@ -442,8 +474,8 @@
                 justify-content: flex-start;
                 gap: 1rem;
                 width: 100%;
-                border-bottom: 1px solid #000000;
-                overflow: scroll;
+                border-bottom: 1px solid var(--color-border);
+                overflow: auto;
                 margin-bottom: 1rem;
             }
             .cardInfoBox {
@@ -455,19 +487,19 @@
                 padding: .5rem 1rem;
                 border-radius: .5rem;
                 width: 100%;
-                border: 1px solid #000000;
+                border: 1px solid var(--color-border);
                 margin-top: 1rem;
                 width: 100%;
             }
             .cardInfoRules {
                 padding-bottom: 1rem;
-                border-bottom: 1px solid #000000;
+                border-bottom: 1px solid var(--color-border);
             }
             .cardInfoRules > h4 {
                 margin: 0;
             }
             .cardRuleFull {
-                border-bottom: 1px solid #000000;
+                border-bottom: 1px solid var(--color-border);
             }
             .cardRuleFull h3 {
                 margin-bottom: .5rem;
@@ -506,7 +538,7 @@
             .pdfMessage {
                 font-weight: bold;
                 font-size: 1.5rem;
-                color: #e91e24;
+                color: var(--color-error);
             }
             #crFallback, #medFallback, #trFallback {
                 max-height: 60vh;
@@ -549,21 +581,21 @@
             /* Custom Scrollbar CSS */
             /* Scrollbar */
             ::-webkit-scrollbar {
-                width: 6px;
-                height: 6px;
+                width: 10px;
+                height: 10px;
             }
 
             /* Scrollbar Track */
             ::-webkit-scrollbar-track {
                 background-color: transparent;
-                border-radius: 0;
+                border-radius: 4px;
             }
 
             /* Scrollbar Thumb */
             ::-webkit-scrollbar-thumb {
                 background-color: #ccc;
-                border-radius: 0;
-                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                border-radius: 4px;
+                box-shadow: var(--shadow-inset);
             }
 
             /* Scrollbar Thumb Hover */
@@ -574,6 +606,41 @@
             /* Scrollbar Button */
             ::-webkit-scrollbar-button {
                 display: none;
+            }
+
+            html {
+                --background-color: #f6f6f6;
+                --background-header: #f6f6f6;
+                --color-darker: #ececec;
+                --color-disabled: #fbfaff;
+                --color-lighter: #ebebeb;
+                --color-input: #ffffff;
+                --color-placeholder: #d7d9d9;
+                --color-text: #2f2f2f;
+                --color-border: #dadada;
+                --color-selected: #d5d5d5;
+                --color-link: #4abdb9;
+                --color-error: #c1191e;
+                --font-size: 14px;
+                --shadow: 0px 0px 0.5rem rgba(201, 201, 201, 0.3);
+                --shadow-inset: inset 0px 0px 10px rgba(157, 157, 157, 0.3);
+            }
+            html.darkmode {
+                --background-color: #2f2e34;
+                --background-header: #29282d;
+                --color-darker: #29282d;
+                --color-disabled: #29282d;
+                --color-lighter: #343339;
+                --color-input: #343339;
+                --color-placeholder: #6f6d77;
+                --color-text: #d4d6da;
+                --color-border: #403f45;
+                --color-selected: #434248;
+                --color-link: #4abdb9;
+                --color-error: #c1191e;
+                --font-size: 14px;
+                --shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.3);
+                --shadow-inset: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
             }
         </style>
         <script>
@@ -777,9 +844,11 @@
 
                 if (!hasDoc && $('#' + docType + 'Container').is(':visible')) {
                     $('#' + docType + 'Container > object').hide();
+                    $('#' + docType + 'Container > .pdfMessage').show();
                     $('#' + docType + 'Fallback').show();
                 } else {
                     $('#' + docType + 'Container > object').show();
+                    $('#' + docType + 'Container > .pdfMessage').hide();
                     $('#' + docType + 'Fallback').hide();
                 }
             }
