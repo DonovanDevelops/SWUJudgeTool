@@ -143,7 +143,7 @@ def get_rule_data(cards, set_numbers):
                         for rule_item in rule_array:
                             if rule_item != '':
                                 rule_final.append(rule_item.replace('</td>', '').split('</tr>')[0])
-                        
+
                         if card_id.capitalize() not in rules:
                             rules[card_id.capitalize()] = []
 
@@ -162,13 +162,12 @@ def get_rule_data(cards, set_numbers):
     }
 
 def get_flat_data(cards, rules, sets, aspects):
-    print(sets)
     flat_data = {}
 
     for card in cards:
         card_data = card["attributes"]
         card_id = f'{card_data["title"]}{" - " + card_data["subtitle"] if card_data["subtitle"] is not None and card_data["subtitle"] != "" else ""}'
-        card_id_caps = f'{card_data["title"].capitalize()}{" - " + card_data["subtitle"].capitalize() if card_data["subtitle"] is not None and card_data["subtitle"] != "" else ""}'
+        card_id_caps = card_id.capitalize()
 
         if card_id not in flat_data:
             flat_data[card_id] = {
@@ -213,7 +212,6 @@ def get_flat_data(cards, rules, sets, aspects):
                 flat_data[card_id]["traits"].append(trait["attributes"]["name"])
 
         if str(card_data["expansion"]["data"]["attributes"]["sortValue"]) in sets:
-            print(card_data["expansion"]["data"]["attributes"]["sortValue"])
             if str(card_data["expansion"]["data"]["attributes"]["sortValue"]) not in flat_data[card_id]["sets"]:
                 flat_data[card_id]["sets"].append(str(card_data["expansion"]["data"]["attributes"]["sortValue"]))
 
