@@ -51,6 +51,8 @@ def get_card_data():
 def get_set_data(cards):
     # Use this object to keep track of the match between a set number and the name of the set
     sets = {}
+    # Use this object to keep track of the match between a set number and the abbreviation of the set
+    set_abbrs = {}
     # Use this array to keep track of the main set numbers that we care about (see below)
     set_numbers = []
 
@@ -60,18 +62,40 @@ def get_set_data(cards):
         card_set = card_data["expansion"]["data"]["attributes"]
         set_name = card_set["name"]
         set_number = card_set["sortValue"]
+        set_abbr = card_set["code"]
         
         # The main sets (like SOR, SHD, TWI, etc) all have set numbers that end with a '9', whereas other sets end with something else.
         if set_number % 10 == 9:
             # We only want to add each set once
             if str(set_number) not in sets:
                 sets[str(set_number)] = set_name
+                set_abbrs[str(set_number)] = set_abbr
                 set_numbers.append(set_number)
 
     return {
         'sets': sets,
-        'set_numbers': set_numbers
+        'set_numbers': set_numbers,
+        'set_abbrs': set_abbrs
     }
+
+def get_aspect_data(cards):
+    # Use this object to keep track of the match between an aspect name and it's sort order
+    aspects = {}
+
+    # Loop through each one of the cards
+    for card in cards:
+        card_data = card["attributes"]
+
+        for aspect in card_data["aspects"]["data"]:
+            if aspect["attributes"]["name"] != "" and aspect["attributes"]["name"] not in aspects:
+                aspects[aspect["attributes"]["name"]] = aspect["attributes"]["sortValue"]
+        for aspect in card_data["aspectDuplicates"]["data"]:
+            if aspect["attributes"]["name"] != "" and aspect["attributes"]["name"] not in aspects:
+                aspects[aspect["attributes"]["name"]] = aspect["attributes"]["sortValue"]
+
+    aspectOrder = sorted(aspects, key=aspects.get)
+
+    return aspectOrder
 
 # Function to extract the rule data from the card array
 # Takes in an array of card objects and an array of main set numbers
@@ -137,7 +161,8 @@ def get_rule_data(cards, set_numbers):
         'dates': dates
     }
 
-def get_flat_data(cards, rules):
+def get_flat_data(cards, rules, sets, aspects):
+    print(sets)
     flat_data = {}
 
     for card in cards:
@@ -149,7 +174,12 @@ def get_flat_data(cards, rules):
             flat_data[card_id] = {
                 "card_name": card_id,
                 "versions": [],
-                "rules": []
+                "rules": [],
+                "aspects": [],
+                "aspectDuplicates": [],
+                "types": [],
+                "sets": [],
+                "traits": []
             }
 
         card_info = {
@@ -164,12 +194,79 @@ def get_flat_data(cards, rules):
             "front_orient": card_data["artBackHorizontal"] if card_data["artBackHorizontal"] is not None else ""
         }
 
+        for aspect in card_data["aspects"]["data"]:
+            if aspect["attributes"]["name"] != "":
+                flat_data[card_id]["aspects"].append(aspect["attributes"]["name"])
+        for aspect in card_data["aspectDuplicates"]["data"]:
+            if aspect["attributes"]["name"] != "":
+                flat_data[card_id]["aspectDuplicates"].append(aspect["attributes"]["name"])
+
+        if card_data["type"]["data"] is not None:
+            if card_data["type"]["data"]["attributes"]["name"] != "":
+                flat_data[card_id]["types"].append(card_data["type"]["data"]["attributes"]["name"])
+        if card_data["type2"]["data"] is not None:
+            if card_data["type2"]["data"]["attributes"]["name"] != "":
+                flat_data[card_id]["types"].append(card_data["type2"]["data"]["attributes"]["name"])
+
+        for trait in card_data["traits"]["data"]:
+            if trait["attributes"]["name"] != "":
+                flat_data[card_id]["traits"].append(trait["attributes"]["name"])
+
+        if str(card_data["expansion"]["data"]["attributes"]["sortValue"]) in sets:
+            print(card_data["expansion"]["data"]["attributes"]["sortValue"])
+            if str(card_data["expansion"]["data"]["attributes"]["sortValue"]) not in flat_data[card_id]["sets"]:
+                flat_data[card_id]["sets"].append(str(card_data["expansion"]["data"]["attributes"]["sortValue"]))
+
         if card_id_caps in rules:
             flat_data[card_id]["rules"] = rules[card_id_caps]
 
         flat_data[card_id]["versions"].append(card_info)
 
-    return flat_data
+    tidy_data = {}
+    for id, info in flat_data.items():
+        tidy_data[id] = {}
+        tidy_data[id]["card_name"] = info["card_name"]
+        tidy_data[id]["versions"] = info["versions"]
+        tidy_data[id]["rules"] = info["rules"]
+
+        aspectFinal = []
+        aspectDupe = []
+        for aspect in info["aspects"]:
+            if info["aspects"].count(aspect) > 1 and aspect not in aspectFinal:
+                aspectFinal.append(aspect)
+        for aspect in info["aspectDuplicates"]:
+            if info["aspectDuplicates"].count(aspect) > 1 and aspect not in aspectDupe:
+                aspectDupe.append(aspect)
+
+        aspectFinal.extend(aspectDupe)
+        
+        aspectFinal = sorted(aspectFinal, key=lambda x: aspects.index(x))
+        tidy_data[id]["aspects"] = aspectFinal
+
+        cardType = ''
+        typestring = "".join(info["types"]).lower()
+        if 'leader' in typestring:
+            cardType = "Leader"
+        elif 'base' in typestring:
+            cardType = "Base"
+        elif 'unit' in typestring:
+            cardType = "Unit"
+        elif 'upgrade' in typestring:
+            cardType = "Upgrade"
+        elif 'event' in typestring:
+            cardType = "Event"
+        tidy_data[id]["type"] = cardType
+
+        cardSets = sorted(info["sets"])
+        setOrder = []
+        for set in cardSets:
+            setOrder.append(sets[set])
+        tidy_data[id]["sets"] = setOrder
+
+        tidy_data[id]["traits"] = ",".join(info["traits"])
+            
+
+    return tidy_data
 
 # Function to export the rules to a markdown file
 # Takes in an object containing rules, a dictionary of card names to main set printing, a dictionary of set names to set numbers,
@@ -200,15 +297,18 @@ if __name__ == "__main__":
         sets = get_set_data(cards)
         set_data = sets['sets']
         set_numbers = sets['set_numbers']
+        set_abbrs = sets['set_abbrs']
 
         # Extract the additional rules from the cards
         rules = get_rule_data(cards, set_numbers)
         rules_info = rules['rules']
-        print(json.dumps(rules_info))
         card_location = rules['card_location']
         dates = rules['dates']
 
-        flat_data = get_flat_data(cards, rules_info)
+        aspects = get_aspect_data(cards)
+
+        flat_data = get_flat_data(cards, rules_info, set_abbrs, aspects)
+
 
     if len(flat_data) > 0:
         # Build the markdown file

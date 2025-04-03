@@ -584,6 +584,17 @@
             #crFallback > div > img, #medFallback > div > img, #trFallback > div > img {
                 max-width: 100%;
             }
+            .cardItem > div:first-child {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .cardItem > div:first-child img {
+                max-height: 2rem;
+                height: 2rem;
+                width: auto;
+            }
 
             /* Responsive Styling */
             @media screen and (max-width: 1024px) {
@@ -656,6 +667,15 @@
                 med: window.projectNamespace.med,
                 tr: window.projectNamespace.tr
             };
+            var aspectImages = {
+                'Vigilance': '<img src="https://cdn.starwarsunlimited.com/icon_vigilance_aebda7026f.png" />',
+                'Command': '<img src="https://cdn.starwarsunlimited.com/icon_command_df837f32c6.png" />',
+                'Aggression': '<img src="https://cdn.starwarsunlimited.com/icon_aggression_24cc746635.png" />',
+                'Cunning': '<img src="https://cdn.starwarsunlimited.com/icon_cunning_931f93ee4c.png" />',
+                'Villainy': '<img src="https://cdn.starwarsunlimited.com/icon_villainy_eb77e7874b.png" />',
+                'Heroism': '<img src="https://cdn.starwarsunlimited.com/icon_heroism_99d152cb2d.png" />'
+            }
+            console.log(window.projectNamespace);
 
             function updateSearch() {
                 const searchText = $('#searchInput').val().toLowerCase();
@@ -666,7 +686,7 @@
                 $('.cardInfoRules').hide();
                 $('.activeItem').removeClass('activeItem');
                 $('.cardItem').each(function () {
-                    if ($(this).text().toLowerCase().includes(searchText)) {
+                    if ($(this).html().toLowerCase().includes(searchText)) {
                         $(this).show();
                     }
                 });
@@ -693,7 +713,7 @@
 
                     var cardListHTML = '';
                     Object.entries(sortedCardList).forEach(([cardKey, cardInfo]) => {
-                        cardListHTML += '<div class="cardItem" onclick="if ($(this).hasClass(\'activeItem\')) {$(\'.cardInfo\').hide();$(\'.cardInfoRules\').hide();$(\'.cardItem\').removeClass(\'activeItem\');} else {$(\'.cardItem\').removeClass(\'activeItem\');$(this).addClass(\'activeItem\');$(\'.cardInfo\').hide(); $(\'.cardInfoRules\').hide();$(\'.' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '\').show();}">' + cardKey + '</div>';
+                        cardListHTML += '<div class="cardItem" onclick="if ($(this).hasClass(\'activeItem\')) {$(\'.cardInfo\').hide();$(\'.cardInfoRules\').hide();$(\'.cardItem\').removeClass(\'activeItem\');} else {$(\'.cardItem\').removeClass(\'activeItem\');$(this).addClass(\'activeItem\');$(\'.cardInfo\').hide(); $(\'.cardInfoRules\').hide();$(\'.' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '\').show();}"><div><span>' + cardKey + (cardInfo.sets.length > 0 || cardInfo.type != '' ? ' [' : '') + (cardInfo.type != '' ? cardInfo.type : '') + (cardInfo.sets.length > 0 ? (cardInfo.type != '' ? ' - ' : '') + cardInfo.sets.join(', ') : '') + (cardInfo.sets.length > 0 || cardInfo.type != '' ? ']' : '') + '</span><div data-traits="' + cardInfo.traits + '" data-aspcts="' + (cardInfo.aspects.length > 0 ? cardInfo.aspects.join(', ') : '') + '">' + (cardInfo.aspects.length > 0 ? cardInfo.aspects.map(x => aspectImages[x]).join('') : '') + '</div></div>';
                         cardListHTML += '<div class="cardInfo ' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '" style="display: none;">';
                             
                         for (let i = 0; i < cardInfo.versions.length; i++) {
@@ -717,6 +737,7 @@
                             }
                             cardListHTML += '</div>';
                         }
+                        cardListHTML += '</div>';
                     });
 
                     $('#cardContent').html(cardListHTML);
