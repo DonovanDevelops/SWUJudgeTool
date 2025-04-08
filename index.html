@@ -595,6 +595,10 @@
                 height: 2rem;
                 width: auto;
             }
+            .cardInfo, .cardInfoRules {
+                user-select: text;
+                cursor: default;
+            }
 
             /* Responsive Styling */
             @media screen and (max-width: 1024px) {
@@ -685,7 +689,6 @@
                 'Villainy': '<img src="https://cdn.starwarsunlimited.com/icon_villainy_eb77e7874b.png" />',
                 'Heroism': '<img src="https://cdn.starwarsunlimited.com/icon_heroism_99d152cb2d.png" />'
             }
-            console.log(window.projectNamespace);
 
             function updateSearch() {
                 const searchText = $('#searchInput').val().toLowerCase();
@@ -723,7 +726,7 @@
 
                     var cardListHTML = '';
                     Object.entries(sortedCardList).forEach(([cardKey, cardInfo]) => {
-                        cardListHTML += '<div class="cardItem" onclick="if ($(this).hasClass(\'activeItem\')) {$(\'.cardInfo\').hide();$(\'.cardInfoRules\').hide();$(\'.cardItem\').removeClass(\'activeItem\');} else {$(\'.cardItem\').removeClass(\'activeItem\');$(this).addClass(\'activeItem\');$(\'.cardInfo\').hide(); $(\'.cardInfoRules\').hide();$(\'.' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '\').show();}"><div><span>' + cardKey + (cardInfo.sets.length > 0 || cardInfo.type != '' ? ' [' : '') + (cardInfo.type != '' ? cardInfo.type : '') + (cardInfo.sets.length > 0 ? (cardInfo.type != '' ? ' - ' : '') + cardInfo.sets.join(', ') : '') + (cardInfo.sets.length > 0 || cardInfo.type != '' ? ']' : '') + '</span><div data-traits="' + cardInfo.traits + '" data-aspcts="' + (cardInfo.aspects.length > 0 ? cardInfo.aspects.join(', ') : '') + '">' + (cardInfo.aspects.length > 0 ? cardInfo.aspects.map(x => aspectImages[x]).join('') : '') + '</div></div>';
+                        cardListHTML += '<div class="cardItem" onclick="toggleShow(event);"><div><span>' + cardKey + (cardInfo.sets.length > 0 || cardInfo.type != '' ? ' [' : '') + (cardInfo.type != '' ? cardInfo.type : '') + (cardInfo.sets.length > 0 ? (cardInfo.type != '' ? ' - ' : '') + cardInfo.sets.join(', ') : '') + (cardInfo.sets.length > 0 || cardInfo.type != '' ? ']' : '') + '</span><div data-traits="' + cardInfo.traits + '" data-aspcts="' + (cardInfo.aspects.length > 0 ? cardInfo.aspects.join(', ') : '') + '">' + (cardInfo.aspects.length > 0 ? cardInfo.aspects.map(x => aspectImages[x]).join('') : '') + '</div></div>';
                         cardListHTML += '<div class="cardInfo ' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '" style="display: none;">';
                             
                         for (let i = 0; i < cardInfo.versions.length; i++) {
@@ -865,6 +868,30 @@
                 }
 
                 return markdownLines.join('');
+            }
+
+            function toggleShow(target) {
+                var clicked = $(target.target);
+                var parent = clicked.closest('.cardItem')[0];
+
+                var doNotToggle = false;
+                if (clicked.hasClass('cardInfo') || clicked.hasClass('cardInfoRules') || clicked.closest('.cardInfo').length > 0 || clicked.closest('.cardInfoRules').length > 0) {
+                    doNotToggle = true;
+                }
+
+                if (!doNotToggle) {
+                    if ($(parent).hasClass('activeItem')) {
+                        $('.cardInfo').hide();
+                        $('.cardInfoRules').hide();
+                        $('.cardItem').removeClass('activeItem');
+                    } else {
+                        $('.cardItem').removeClass('activeItem');
+                        $(parent).addClass('activeItem');
+                        $('.cardInfo').hide();
+                        $('.cardInfoRules').hide();
+                        $(parent).children().show();
+                    }
+                }
             }
 
             // Uses https://www.adobe.com/acrobat/online/pdf-to-jpg.html to convert a PDF to a png per page.
