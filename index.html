@@ -24,6 +24,7 @@
                 <div id="trDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#trContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');docLoaded('tr');">TR</div>
                 <div id="clarificationDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#ruleClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Rules Clarifications</div>
                 <div id="policyDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#policyClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Policy Clarifications</div>
+                <div id="legalityDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#legalityContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Card Legality</div>
             </nav>
             <search>
                 <input type="text" id="searchInput" placeholder="Search in Cards and Additional Rulings..." oninput="updateSearch();">
@@ -334,6 +335,48 @@
                     Judges are not expected to recognize all advancing interconnected technology. However, if recognized or if a player asks, smartwatches and other devices that the player has access to (such as smartglasses etc...) must meet the requirements for electronic devices, which includes turning off internet access and being visible to the opponent.
                     </p>
                           </div>
+                </div>
+            </div>
+            <div class="contentContainer" id="legalityContainer" style="display:none;">
+                <div class="sectionContent">
+                    <h3>Card Legality Terms</h3>
+                    <ul>
+                        <li><b>Suspended: </b>This means that the card is currently illegal to play in the associated format. Suspended cards are reviewed every few months, likely around set releases. Cards that are suspended may be removed from the suspended list.</li>
+                        <li><b>Banned: </b>This means that the card is permanently illegal to play in the associated format. There are currently no banned cards.</li>
+                        <li><b>Restricted: </b>This means that the card is limited in what other cards can be in a deck with it or limited in what quantities it can be played in. There are currently no restricted cards.</li>
+                        <li><b>Errata: </b>This means that the card has received changes to its text or attributes. This can be <i>functional</i> errata, which changes how the card functions and interacts with the game rules. This can also be <i>non-functional</i> errata, which is usually grammar or templating updates, that change the wording on the card, but do not impact gameplay.</li>
+                    </ul>
+                    <hr>
+                    <h1>Premier</h1>
+                    <h2>Suspended Cards</h2>
+                    <ul>
+                        <li>Boba Fett - Collecting the Bounty</li>
+                        <li>Jango Fett - Concealing the Conspiracy</li>
+                        <li>DJ - Blatant Thief</li>
+                        <li>Triple Dark Raid</li>
+                    </ul>
+                    <h2>Banned Cards</h2>
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                    <h2>Restricted Cards</h2>
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                    <hr>
+                    <h1>Twin Suns</h1>
+                    <h2>Suspended Cards</h2>
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                    <h2>Banned Cards</h2>
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                    <h2>Restricted Cards</h2>
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
                 </div>
             </div>
         </content>
