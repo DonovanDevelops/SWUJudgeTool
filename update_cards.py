@@ -33,11 +33,23 @@ def get_card_data():
         # Get the card data from each page and add that page to an array of pages
         pages = []
         for i in range(1, total_pages + 1):
+            retry_count = 0
+            max_retries = 5
             page_url = f'{api_url}?locale=en&pagination[page]={i}'
-            response = session.get(page_url)
-            pages.append(response.json()['data'])
-            print(f'Finished page {i} of {total_pages}.')
-            time.sleep(1)
+
+            while retry_count < max_retries:
+                try:
+                    response = session.get(page_url)
+                    response.raise_for_status()
+                    pages.append(response.json()['data'])
+                    print(f'Finished page {i} of {total_pages}.')
+                    break
+                except (requests.exceptions.RequestException, json.JSONDecodeError):
+                    retry_count += 1
+                    print(f'Error occurred while fetching page {i}. Retrying...')
+            else:
+                print(f'Failed to fetch page {i} after {max_retries} retries.')
+                raise Exception(f'Failed to fetch page {i} after {max_retries} retries.')
 
         # Smush the pages into a single array
         cards = [item for sublist in pages for item in sublist]
