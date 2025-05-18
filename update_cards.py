@@ -9,6 +9,77 @@ import datetime
 import json
 import time
 
+# Data overrides that help when different variants of the same card have different information in the official database.
+data_overrides = {
+    "ANAKIN SKYWALKER - WHAT IT TAKES TO WIN": {
+        'keywords': ["Overwhelm"]
+    },
+    "ASAJJ VENTRESS - COUNT DOOKU'S ASSASSIN": {
+        'unique': 1
+    },
+    "BOBA FETT - COLLECTING THE BOUNTY": {
+        'aspects': ["Cunning", "Villainy"]
+    },
+    "BOSSK - DEADLY STALKER": {
+        'aspects': ["Cunning", "Villainy"]
+    },
+    "CHANCELLOR PALPATINE - PLAYING BOTH SIDES": {
+        'aspects': ["Cunning", "Heroism", "Villainy"]
+    },
+    "CORPORATE LIGHT CRUISER": {
+        'keywords': ["Ambush", "Raid"]
+    },
+    "COUNT DOOKU - FACE OF THE CONFEDERACY": {
+        'keywords': ["Overwhelm", "Exploit"]
+    },
+    "EXPERIENCE": {
+        'types': ["Token Upgrade"]
+    },
+    "HARDPOINT HEAVY BLASTER": {
+        'types': ["Upgrade"],
+        'upgradeHp': 2,
+        'upgradePower': 2,
+        'hp': 'null',
+        'power': 'null'
+    },
+    "HOTSHOT DL-44 BLASTER": {
+        'upgradePower': 2
+    },
+    "IT BINDS ALL THINGS": {
+        'aspects': ["Vigilance"]
+    },
+    "KYLO REN - KILLING THE PAST": {
+        'unique': 1
+    },
+    "LANDO CALRISSIAN - WITH IMPECCABLE TASTE": {
+        'hp': 5,
+        'power': 2
+    },
+    "MC30 ASSAULT FRIGATE": {
+        'keywords': ["Overwhelm", "Raid"]
+    },
+    "PRE VIZSLA - PURSUING THE THRONE": {
+        'keywords': ["Saboteur"]
+    },
+    "R2-D2 - FULL OF SOLUTIONS": {
+        'subtitle': 'Full of Solutions'
+    },
+    "SIDON ITHANO - THE CRIMSON CORSAIR": {
+        'upgradeHp': -2,
+        'upgradePower': -2
+    },
+    "THE MANDALORIAN'S RIFLE": {
+        'unique': 1,
+        'upgradePower': 3
+    },
+    "VONREG'S TIE INTERCEPTOR - ACE OF THE FIRST ORDER": {
+        'keywords': ["Overwhelm", "Raid"]
+    },
+    "WRECKER - BOOM!": {
+        'subtitle': "BOOM!"
+    }
+}
+
 # Function to get all cards from the SWU API
 # Returns an array of card objects and their associated data
 def get_card_data():
@@ -124,8 +195,14 @@ def get_rule_data(cards, set_numbers):
     # Loop through each one of the cards
     for card in cards:
         card_data = card["attributes"]
+        # Checking the title and subtitle in all caps to check for any data overrides.
+        card_id_caps = f'{card_data["title"]}{" - " + card_data["subtitle"] if card_data["subtitle"] is not None and card_data["subtitle"] != "" else ""}'.upper()
+        subtitle = card_data["subtitle"]
+        if card_id_caps in data_overrides:
+            if "subtitle" in data_overrides[card_id_caps]:
+                subtitle = data_overrides[card_id_caps]["subtitle"]
         # This is just the best way so far that has been found to get unique versions of cards (like keeping both Darth Maul units separate)
-        card_id = f'{card_data["title"]}{" - " + card_data["subtitle"] if card_data["subtitle"] is not None and card_data["subtitle"] != "" else ""}'
+        card_id = f'{card_data["title"]}{" - " + subtitle if subtitle is not None and subtitle != "" else ""}'
         
         # We only care if the card has any additional rulings
         if card_data["rulesStyled"] is not None and card_data["rulesStyled"] != '':
@@ -178,7 +255,15 @@ def get_flat_data(cards, rules, sets, aspects):
 
     for card in cards:
         card_data = card["attributes"]
-        card_id = f'{card_data["title"]}{" - " + card_data["subtitle"] if card_data["subtitle"] is not None and card_data["subtitle"] != "" else ""}'
+
+        # Checking the title and subtitle in all caps to check for any data overrides.
+        card_id_caps = f'{card_data["title"]}{" - " + card_data["subtitle"] if card_data["subtitle"] is not None and card_data["subtitle"] != "" else ""}'.upper()
+        subtitle = card_data["subtitle"]
+        if card_id_caps in data_overrides:
+            if "subtitle" in data_overrides[card_id_caps]:
+                subtitle = data_overrides[card_id_caps]["subtitle"]
+        
+        card_id = f'{card_data["title"]}{" - " + subtitle if subtitle is not None and subtitle != "" else ""}'
         card_id_caps = card_id.capitalize()
 
         if card_id not in flat_data:
@@ -218,10 +303,16 @@ def get_flat_data(cards, rules, sets, aspects):
         if card_data["type2"]["data"] is not None:
             if card_data["type2"]["data"]["attributes"]["name"] != "":
                 flat_data[card_id]["types"].append(card_data["type2"]["data"]["attributes"]["name"])
+        if card_id_caps in data_overrides:
+            if "types" in data_overrides[card_id_caps]:
+                flat_data[card_id]["types"] = data_overrides[card_id_caps]["types"]
 
         for trait in card_data["traits"]["data"]:
             if trait["attributes"]["name"] != "":
                 flat_data[card_id]["traits"].append(trait["attributes"]["name"])
+        if card_id_caps in data_overrides:
+            if "traits" in data_overrides[card_id_caps]:
+                flat_data[card_id]["traits"] = data_overrides[card_id_caps]["traits"]
 
         if str(card_data["expansion"]["data"]["attributes"]["sortValue"]) in sets:
             if str(card_data["expansion"]["data"]["attributes"]["sortValue"]) not in flat_data[card_id]["sets"]:
@@ -251,6 +342,10 @@ def get_flat_data(cards, rules, sets, aspects):
         aspectFinal.extend(aspectDupe)
         
         aspectFinal = sorted(aspectFinal, key=lambda x: aspects.index(x))
+        if card_id_caps in data_overrides:
+            if "aspects" in data_overrides[card_id_caps]:
+                aspectFinal = data_overrides[card_id_caps]["aspects"]
+
         tidy_data[id]["aspects"] = aspectFinal
 
         cardType = ''
@@ -274,7 +369,6 @@ def get_flat_data(cards, rules, sets, aspects):
         tidy_data[id]["sets"] = setOrder
 
         tidy_data[id]["traits"] = ",".join(info["traits"])
-            
 
     return tidy_data
 
