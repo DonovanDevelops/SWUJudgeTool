@@ -662,8 +662,8 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
             .moveArrows > div {
                 cursor: pointer;
                 user-select: none;
-                height: 64px;
-                width: 64px;
+                height: 24px;
+                width: 24px;
                 fill: var(--color-text);
             }
             .stickyContent h1 svg {
@@ -740,6 +740,13 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                 padding: 0 24px;
                 fill: var(--color-text);
                 cursor: pointer;
+            }
+            .mobilecalced .moveArrows {
+                justify-content: space-between;
+            }
+            .mobilecalced .moveArrows > div {
+                height: 64px;
+                width: 64px;
             }
 
             /* Custom Scrollbar CSS */
@@ -844,8 +851,13 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                     var cardListHTML = '';
                     Object.entries(sortedCardList).forEach(([cardKey, cardInfo]) => {
                         cardListHTML += '<div class="cardItem" onclick="toggleShow(event);"><div><span>' + cardKey + (cardInfo.sets.length > 0 || cardInfo.type != '' ? ' [' : '') + (cardInfo.type != '' ? cardInfo.type : '') + (cardInfo.sets.length > 0 ? (cardInfo.type != '' ? ' - ' : '') + cardInfo.sets.join(', ') : '') + (cardInfo.sets.length > 0 || cardInfo.type != '' ? ']' : '') + '</span><div data-traits="' + cardInfo.traits + '" data-aspcts="' + (cardInfo.aspects.length > 0 ? cardInfo.aspects.join(', ') : '') + '">' + (cardInfo.aspects.length > 0 ? cardInfo.aspects.map(x => aspectImages[x]).join('') : '') + '</div></div>';
-                        cardListHTML += '<div class="cardInfo ' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '" style="display: none;">';
                             
+                        if (cardInfo.versions.length > 1) {
+                            cardListHTML += '<div class="moveArrows"><div class="movePrev" onclick="moveImages(\'previous\', $(\'.cardInfo.' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '\'));"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M177.5 414c-8.8 3.8-19 2-26-4.6l-144-136C2.7 268.9 0 262.6 0 256s2.7-12.9 7.5-17.4l144-136c7-6.6 17.2-8.4 26-4.6s14.5 12.5 14.5 22l0 72 288 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-288 0 0 72c0 9.6-5.7 18.2-14.5 22z"/></svg></div><div class="moveNext" onclick="moveImages(\'next\', $(\'.cardInfo.' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '\'));"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg></div></div>';
+                        }
+                        
+                        cardListHTML += '<div class="cardInfo ' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '" style="display: none;">';
+
                         for (let i = 0; i < cardInfo.versions.length; i++) {
                             cardListHTML += '<div class="cardInfoBox">' +
                                     (cardInfo.versions[i].variant_name !== '' ? '<div><strong>' + cardInfo.versions[i].variant_name + '</strong></div>' : '') +
@@ -858,10 +870,6 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                         }
                         
                         cardListHTML += '</div>';
-
-                        if (cardInfo.versions.length > 1) {
-                            cardListHTML += '<div class="moveArrows"><div class="movePrev" onclick="moveImages(\'previous\', $(\'.cardInfo.' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '\'));"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M177.5 414c-8.8 3.8-19 2-26-4.6l-144-136C2.7 268.9 0 262.6 0 256s2.7-12.9 7.5-17.4l144-136c7-6.6 17.2-8.4 26-4.6s14.5 12.5 14.5 22l0 72 288 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-288 0 0 72c0 9.6-5.7 18.2-14.5 22z"/></svg></div><div class="moveNext" onclick="moveImages(\'next\', $(\'.cardInfo.' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '\'));"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg></div></div>';
-                        }
 
                         if (cardInfo.rules.length > 0) {
                             cardListHTML += '<div class="cardInfoRules ' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '" style="display: none;">';
@@ -1005,6 +1013,7 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                 if (!doNotToggle) {
                     if ($(parent).hasClass('activeItem')) {
                         $('.cardInfo').hide();
+                        $('.cardInfoBox').hide();
                         $('.cardInfoRules').hide();
                         $('.moveArrows').hide();
                         $('.cardItem').removeClass('activeItem');
@@ -1012,6 +1021,7 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                         $('.cardItem').removeClass('activeItem');
                         $(parent).addClass('activeItem');
                         $('.cardInfo').hide();
+                        $('.cardInfoBox').hide();
                         $('.cardInfoRules').hide();
                         $('.moveArrows').hide();
                         $(parent).children('.cardInfo').css('display', 'flex').show();
