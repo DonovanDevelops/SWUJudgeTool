@@ -556,11 +556,12 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                 gap: 1rem;
                 width: 100%;
                 border-bottom: 1px solid var(--color-border);
-                overflow: auto;
+                overflow: hidden;
                 margin-bottom: 1rem;
             }
             .cardInfoBox {
-                display: flex;
+                display: none;
+                /*display: flex;*/
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -573,6 +574,8 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                 width: 100%;
             }
             .cardInfoRules {
+                flex-direction: column;
+                align-items: flex-start;
                 padding-bottom: 1rem;
                 border-bottom: 1px solid var(--color-border);
             }
@@ -647,6 +650,22 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                 user-select: text;
                 cursor: default;
             }
+            .moveArrows {
+                display: flex;
+                display: none;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 24px;
+            }
+            .moveArrows > div {
+                cursor: pointer;
+                user-select: none;
+                height: 64px;
+                width: 64px;
+                fill: var(--color-text);
+            }
 
             /* Responsive Styling */
             @media screen and (max-width: 1024px) {
@@ -690,6 +709,12 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                     width: 1024px;
                     margin: auto;
                 }
+            }
+            .mobilecalced {
+                font-size: 30px;
+            }
+            .mobilecalced .cardImage {
+                width: 100%;
             }
 
             /* Custom Scrollbar CSS */
@@ -738,6 +763,23 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                 'Heroism': '<img src="https://cdn.starwarsunlimited.com/icon_heroism_99d152cb2d.png" />'
             }
 
+            function checkSize() {
+                var ratio = window.devicePixelRatio;
+                var width = window.innerWidth;
+                var actualwidth = width / ratio;
+
+                //console.log(ratio);
+                //console.log(width);
+                //console.log(actualwidth);
+                //console.log(actualwidth <= 1024 && ratio > 1);
+
+                if (actualwidth <= 1024 && ratio > 1) {
+                    $('html').addClass('mobilecalced');
+                } else {
+                    $('html').removeClass('mobilecalced');
+                }
+            }
+
             function updateSearch() {
                 const searchText = $('#searchInput').val().toLowerCase();
 
@@ -779,6 +821,7 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                             
                         for (let i = 0; i < cardInfo.versions.length; i++) {
                             cardListHTML += '<div class="cardInfoBox">' +
+                                    (cardInfo.versions[i].variant_name !== '' ? '<div><strong>' + cardInfo.versions[i].variant_name + '</strong></div>' : '') +
                                     (cardInfo.versions[i].front_image !== '' ? '<img class="cardImage frontImage" src="' + cardInfo.versions[i].front_image + '" alt="' + cardKey + ' - Front" />' : '') +
                                     (cardInfo.versions[i].back_image !== '' ? '<img class="cardImage backImage" src="' + cardInfo.versions[i].back_image + '" alt="' + cardKey + ' - Back" />' : '') +
                                     (cardInfo.versions[i].text !== '' ? '<div><strong>Card Text:</strong> ' + cardInfo.versions[i].text.replaceAll("'", "\'") + '</div>' : '') +
@@ -788,6 +831,11 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                         }
                         
                         cardListHTML += '</div>';
+
+                        if (cardInfo.versions.length > 1) {
+                            cardListHTML += '<div class="moveArrows"><div class="movePrev" onclick="moveImages(\'previous\', $(\'.cardInfo.' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '\'));"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M177.5 414c-8.8 3.8-19 2-26-4.6l-144-136C2.7 268.9 0 262.6 0 256s2.7-12.9 7.5-17.4l144-136c7-6.6 17.2-8.4 26-4.6s14.5 12.5 14.5 22l0 72 288 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-288 0 0 72c0 9.6-5.7 18.2-14.5 22z"/></svg></div><div class="moveNext" onclick="moveImages(\'next\', $(\'.cardInfo.' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '\'));"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg></div></div>';
+                        }
+
                         if (cardInfo.rules.length > 0) {
                             cardListHTML += '<div class="cardInfoRules ' + cardKey.replaceAll(' ', '_').replaceAll("'", "").replace(/[^\w\s]/gi, "") + '" style="display: none;">';
                                 cardListHTML += '<h4>Rules:</h4>';
@@ -923,7 +971,7 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                 var parent = clicked.closest('.cardItem')[0];
 
                 var doNotToggle = false;
-                if (clicked.hasClass('cardInfo') || clicked.hasClass('cardInfoRules') || clicked.closest('.cardInfo').length > 0 || clicked.closest('.cardInfoRules').length > 0) {
+                if (clicked.closest('.moveArrows').length > 0 || clicked.hasClass('cardInfo') || clicked.hasClass('cardInfoRules') || clicked.closest('.cardInfo').length > 0 || clicked.closest('.cardInfoRules').length > 0) {
                     doNotToggle = true;
                 }
 
@@ -931,14 +979,51 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                     if ($(parent).hasClass('activeItem')) {
                         $('.cardInfo').hide();
                         $('.cardInfoRules').hide();
+                        $('.moveArrows').hide();
                         $('.cardItem').removeClass('activeItem');
                     } else {
                         $('.cardItem').removeClass('activeItem');
                         $(parent).addClass('activeItem');
                         $('.cardInfo').hide();
                         $('.cardInfoRules').hide();
-                        $(parent).children().show();
+                        $('.moveArrows').hide();
+                        $(parent).children('.cardInfo').css('display', 'flex').show();
+                        $(parent).children('.moveArrows').css('display', 'flex').show();
+                        $(parent).children('.cardInfoRules').css('display', 'flex').show();
+                        $(parent).children('.cardInfo').children('.cardInfoBox:first-child()').css('display', 'flex').show();
                     }
+                }
+            }
+
+            function moveImages(direction, cardInfo) {
+                const cardInfoBoxes = cardInfo.children('.cardInfoBox');
+                const currentInfoBox = cardInfo.children('.cardInfoBox:visible')[0];
+                const currentIndex = Array.prototype.indexOf.call(cardInfoBoxes, currentInfoBox);
+                var nextIndex = -1;
+                var nextInfoBox;
+
+                if (direction === 'next') {
+                    nextIndex = currentIndex + 1;
+
+                    if (nextIndex > cardInfoBoxes.length - 1) {
+                        nextInfoBox = cardInfoBoxes[0];
+                    } else {
+                        nextInfoBox = cardInfoBoxes[nextIndex];
+                    }
+
+                    $(currentInfoBox).hide();
+                    $(nextInfoBox).css('display', 'flex').show();
+                } else if (direction === 'previous') {
+                    nextIndex = currentIndex - 1;
+
+                    if (nextIndex < 0) {
+                        nextInfoBox = cardInfoBoxes[cardInfoBoxes.length - 1];
+                    } else {
+                        nextInfoBox = cardInfoBoxes[nextIndex];
+                    }
+
+                    $(currentInfoBox).hide();
+                    $(nextInfoBox).css('display', 'flex').show();
                 }
             }
 
@@ -966,6 +1051,8 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
             }
 
             main = function () {
+                checkSize();
+
                 createCardList();
                 createRulesList();
 
@@ -1002,6 +1089,7 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
             }
 
             main();
+            $(window).resize(checkSize);
             /*
             $(document).ready(function() {
                 $('img[loading="lazy"]').attr('loading', 'auto');

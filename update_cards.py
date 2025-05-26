@@ -287,7 +287,8 @@ def get_flat_data(cards, rules, sets, aspects):
             "front_image": card_data["artFront"]["data"]["attributes"]["formats"]["thumbnail"]["url"] if card_data["artFront"]["data"] is not None and card_data["artFront"]["data"]["attributes"]["formats"]["thumbnail"]["url"] != "" else "",
             "back_image": card_data["artBack"]["data"]["attributes"]["formats"]["thumbnail"]["url"] if card_data["artBack"]["data"] is not None and card_data["artBack"]["data"]["attributes"]["formats"]["thumbnail"]["url"] != "" else "",
             "front_orient": card_data["artFrontHorizontal"] if card_data["artFrontHorizontal"] is not None else "",
-            "front_orient": card_data["artBackHorizontal"] if card_data["artBackHorizontal"] is not None else ""
+            "back_orient": card_data["artBackHorizontal"] if card_data["artBackHorizontal"] is not None else "",
+            "variant_name": card_data["variantTypes"]["data"][0]["attributes"]["name"] if card_data["variantTypes"]["data"] is not None and len(card_data["variantTypes"]["data"]) > 0 else "",
         }
 
         for aspect in card_data["aspects"]["data"]:
