@@ -15,7 +15,7 @@
     </head>
     <body>
         <div class="stickyContent">
-            <h1>Star Wars: Unlimited Judge Tool</h1>
+            <h1><span>Star Wars: Unlimited Judge Tool</span><svg onclick="toggleMenu();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></h1>
             <nav>
                 <div id="cardDataTab" class="activeTab" onclick="$('#searchInput').prop('disabled', false);$('.contentContainer').hide();$('#cardDataContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Cards</div>
                 <div id="ruleDataTab" onclick="$('#searchInput').prop('disabled', false);$('.contentContainer').hide();$('.activeTab').removeClass('activeTab');$('#ruleDataContainer').show(); $(this).addClass('activeTab');">Additional Rulings</div>
@@ -666,6 +666,9 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
                 width: 64px;
                 fill: var(--color-text);
             }
+            .stickyContent h1 svg {
+                display: none;
+            }
 
             /* Responsive Styling */
             @media screen and (max-width: 1024px) {
@@ -721,6 +724,22 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
             }
             .mobilecalced search input {
                 font-size: 30px;
+            }
+            .mobilecalced nav {
+                display: none;
+            }
+            .mobilecalced .stickyContent h1 {
+                display: flex !important;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+            .mobilecalced .stickyContent h1 svg {
+                display: flex !important;
+                height: 64px;
+                padding: 0 24px;
+                fill: var(--color-text);
+                cursor: pointer;
             }
 
             /* Custom Scrollbar CSS */
@@ -1030,6 +1049,14 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
 
                     $(currentInfoBox).hide();
                     $(nextInfoBox).css('display', 'flex').show();
+                }
+            }
+
+            function toggleMenu() {
+                if ($('nav').css('display') === 'none') {
+                    $('nav').css('display', 'flex').show();
+                } else {
+                    $('nav').hide();
                 }
             }
 
