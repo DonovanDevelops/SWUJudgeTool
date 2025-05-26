@@ -800,8 +800,10 @@ Judges are not expected to recognize all advancing interconnected technology. Ho
 
                 if (actualwidth <= 1024 && ratio > 1) {
                     $('html').addClass('mobilecalced');
+                    $('nav').hide();
                 } else {
                     $('html').removeClass('mobilecalced');
+                    $('nav').css('display', 'flex').show();
                 }
             }
 
