@@ -33,7 +33,11 @@ data_overrides = {
         'keywords': ["Overwhelm", "Exploit"]
     },
     "EXPERIENCE": {
-        'types': ["Token Upgrade"]
+        'types': ["Token Upgrade"],
+        'upgradeHp': 1,
+        'upgradePower': 1,
+        'hp': None,
+        'power': None
     },
     "HARDPOINT HEAVY BLASTER": {
         'types': ["Upgrade"],
@@ -105,7 +109,7 @@ def get_card_data():
         pages = []
         for i in range(1, total_pages + 1):
             retry_count = 0
-            max_retries = 5
+            max_retries = 10
             page_url = f'{api_url}?locale=en&pagination[page]={i}'
 
             while retry_count < max_retries:
