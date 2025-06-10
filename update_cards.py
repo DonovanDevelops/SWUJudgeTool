@@ -268,7 +268,7 @@ def get_flat_data(cards, rules, sets, aspects):
                 subtitle = data_overrides[card_id_caps]["subtitle"]
         
         card_id = f'{card_data["title"]}{" - " + subtitle if subtitle is not None and subtitle != "" else ""}'
-        card_id_caps = card_id.capitalize()
+        card_id_caps = card_id.upper()        
 
         if card_id not in flat_data:
             flat_data[card_id] = {
@@ -338,10 +338,10 @@ def get_flat_data(cards, rules, sets, aspects):
         aspectFinal = []
         aspectDupe = []
         for aspect in info["aspects"]:
-            if info["aspects"].count(aspect) > 1 and aspect not in aspectFinal:
+            if info["aspects"].count(aspect) >= len(info["versions"]) and aspect not in aspectFinal:
                 aspectFinal.append(aspect)
         for aspect in info["aspectDuplicates"]:
-            if info["aspectDuplicates"].count(aspect) > 1 and aspect not in aspectDupe:
+            if info["aspectDuplicates"].count(aspect) >= len(info["versions"]) and aspect not in aspectDupe:
                 aspectDupe.append(aspect)
 
         aspectFinal.extend(aspectDupe)
