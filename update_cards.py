@@ -323,13 +323,14 @@ def get_flat_data(cards, rules, sets, aspects):
             if str(card_data["expansion"]["data"]["attributes"]["sortValue"]) not in flat_data[card_id]["sets"]:
                 flat_data[card_id]["sets"].append(str(card_data["expansion"]["data"]["attributes"]["sortValue"]))
 
-        if card_id_caps in rules:
-            flat_data[card_id]["rules"] = rules[card_id_caps]
+        if card_id in rules:
+            flat_data[card_id]["rules"] = rules[card_id]
 
         flat_data[card_id]["versions"].append(card_info)
 
     tidy_data = {}
     for id, info in flat_data.items():
+        id_caps = id.upper()
         tidy_data[id] = {}
         tidy_data[id]["card_name"] = info["card_name"]
         tidy_data[id]["versions"] = info["versions"]
@@ -347,9 +348,9 @@ def get_flat_data(cards, rules, sets, aspects):
         aspectFinal.extend(aspectDupe)
         
         aspectFinal = sorted(aspectFinal, key=lambda x: aspects.index(x))
-        if card_id_caps in data_overrides:
-            if "aspects" in data_overrides[card_id_caps]:
-                aspectFinal = data_overrides[card_id_caps]["aspects"]
+        if id_caps in data_overrides:
+            if "aspects" in data_overrides[id_caps]:
+                aspectFinal = data_overrides[id_caps]["aspects"].copy()
 
         tidy_data[id]["aspects"] = aspectFinal
 
