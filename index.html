@@ -9,7 +9,7 @@
         <script src="cards_data.js"></script>
         <script src="pdf_images.js"></script>
         <script type="text/javascript" src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
-        <meta http-equiv="Content-Disposition" content="attachment; filename=rules_documents/SWH_Comp_Rules_4_0_1_67fd04599a.pdf">
+        <meta http-equiv="Content-Disposition" content="attachment; filename=rules_documents/SWH_Comp_Rules_5_0_0b0634f90c.pdf">
         <meta http-equiv="Content-Disposition" content="attachment; filename=rules_documents/Fantasy_Flight_Games_Master_Event_Document_v_1_2_716cb2ef0e.pdf">
         <meta http-equiv="Content-Disposition" content="attachment; filename=rules_documents/SWU_Tournament_Regulations_v1_3_ca8a772c2f.pdf">
     </head>
@@ -19,9 +19,9 @@
             <nav>
                 <div id="cardDataTab" class="activeTab" onclick="$('#searchInput').prop('disabled', false);$('.contentContainer').hide();$('#cardDataContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Cards</div>
                 <div id="ruleDataTab" onclick="$('#searchInput').prop('disabled', false);$('.contentContainer').hide();$('.activeTab').removeClass('activeTab');$('#ruleDataContainer').show(); $(this).addClass('activeTab');">Additional Rulings</div>
-                <div id="crDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#crContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');docLoaded('cr')">CR</div>
-                <div id="medDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#medContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');docLoaded('med');">MED</div>
-                <div id="trDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#trContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');docLoaded('tr');">TR</div>
+                <div id="crDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#crContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');docLoaded('cr')">CR v5.0.0</div>
+                <div id="medDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#medContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');docLoaded('med');">MED v1.2</div>
+                <div id="trDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#trContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');docLoaded('tr');">TR v1.3</div>
                 <div id="clarificationDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#ruleClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Rules Clarifications</div>
                 <div id="policyDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#policyClarificationContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Policy Clarifications</div>
                 <div id="legalityDataTab" onclick="$('#searchInput').prop('disabled', true);$('.contentContainer').hide();$('#legalityContainer').show();$('.activeTab').removeClass('activeTab');$(this).addClass('activeTab');">Card Legality</div>
@@ -33,16 +33,16 @@
         </div>
         <div class="content">
             <div class="contentContainer" id="cardDataContainer">
-                <div class="sectionDescription">This is a list of all cards alphabetically. Select a card to view its images, text, and known rulings.</div>
+                <div class="sectionDescription">This is a list of all cards alphabetically. Select a card to view its images, text, and known rulings. (Updated 7/4/2025)</div>
                 <div class="sectionContent" id="cardContent"></div> 
             </div>
             <div class="contentContainer" id="ruleDataContainer" style="display: none;">
-                <div class="sectionDescription">This is a list of all known additional rulings from the SWU website. Rules are grouped by set, then alphabetically by card name, then by date.</div>
+                <div class="sectionDescription">This is a list of all known additional rulings from the SWU website. Rules are grouped by set, then alphabetically by card name, then by date. (Updated 7/4/2025)</div>
                 <div class="sectionContent" id="ruleContent"></div> 
             </div>
             <div class="contentContainer" id="crContainer" style="display:none;">
-                <div><a class="pdfLink" href="rules_documents/SWH_Comp_Rules_4_0_1_67fd04599a.pdf">Direct Link to PDF</a></div>
-                <object onload="docLoaded('cr');" onerror="$(this).hide();$('#crFallback').show();" data="rules_documents/SWH_Comp_Rules_4_0_1_67fd04599a.pdf" type="application/pdf" width="100%" height="100%">
+                <div><a class="pdfLink" href="rules_documents/SWH_Comp_Rules_5_0_0b0634f90c.pdf">Direct Link to PDF</a></div>
+                <object onload="docLoaded('cr');" onerror="$(this).hide();$('#crFallback').show();" data="rules_documents/SWH_Comp_Rules_5_0_0b0634f90c.pdf" type="application/pdf" width="100%" height="100%">
                     <param name="download" value="true">
                 </object>
                 <div class="pdfMessage">If you are only able to see an image of the first page of the PDF or you see this message above the PDF, your browser does not support the PDF viewer. Please click the link above to view and download the PDF from there so it is available to you offline.</div>
