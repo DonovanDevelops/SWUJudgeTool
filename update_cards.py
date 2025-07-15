@@ -1,5 +1,5 @@
 # Directions: To get the output of rules updates in a markdown file, make sure that you have the below libraries installed,
-# then run the following command in the terminal in the directory this file is in: `python swu_rules.py`
+# then run the following command in the terminal in the directory this file is in: `python update_cards.py`
 
 # Required libraries. To install, run: `pip install requests` and `pip install datetime` (windows)
 # requests is for getting the data from the API
