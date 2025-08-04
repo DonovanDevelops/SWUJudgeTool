@@ -213,11 +213,11 @@ def get_rule_data(cards, set_numbers):
             # And we only care if the card we are looking at is in one of the main sets that we've identified
             if card_data["expansion"]["data"]["attributes"]["sortValue"] in set_numbers:
                 # Keep track of the set this version was printed in for later
-                if card_id.capitalize() not in card_location:
-                    card_location[card_id.capitalize()] = card_data["expansion"]["data"]["attributes"]["sortValue"]
+                if card_id.upper() not in card_location:
+                    card_location[card_id.upper()] = card_data["expansion"]["data"]["attributes"]["sortValue"]
 
-                if card_data["expansion"]["data"]["attributes"]["sortValue"] > card_location[card_id.capitalize()]:
-                    card_location[card_id.capitalize()] = card_data["expansion"]["data"]["attributes"]["sortValue"]
+                if card_data["expansion"]["data"]["attributes"]["sortValue"] > card_location[card_id.upper()]:
+                    card_location[card_id.upper()] = card_data["expansion"]["data"]["attributes"]["sortValue"]
 
                 # The RulesStyled field is a long string with HTML, so we want to do our best to try and strip all of that from our data.
                 rules_string = card_data["rulesStyled"].replace('\n        ', '')
@@ -237,15 +237,15 @@ def get_rule_data(cards, set_numbers):
                             if rule_item != '':
                                 rule_final.append(rule_item.replace('</td>', '').split('</tr>')[0])
 
-                        if card_id.capitalize() not in rules:
-                            rules[card_id.capitalize()] = []
+                        if card_id.upper() not in rules:
+                            rules[card_id.upper()] = []
 
                         if rule_final[0] not in dates:
                             dates.append(rule_final[0])
 
-                        exists = any(sub_arr == rule_final for sub_arr in rules[card_id.capitalize()])
+                        exists = any(sub_arr == rule_final for sub_arr in rules[card_id.upper()])
                         if exists is not True:
-                            rules[card_id.capitalize()].append(rule_final)
+                            rules[card_id.upper()].append(rule_final)
 
     print(f'Finished rules build.')
     return {
