@@ -323,8 +323,8 @@ def get_flat_data(cards, rules, sets, aspects):
             if str(card_data["expansion"]["data"]["attributes"]["sortValue"]) not in flat_data[card_id]["sets"]:
                 flat_data[card_id]["sets"].append(str(card_data["expansion"]["data"]["attributes"]["sortValue"]))
 
-        if card_id in rules:
-            flat_data[card_id]["rules"] = rules[card_id]
+        if card_id_caps in rules:
+            flat_data[card_id]["rules"] = rules[card_id_caps]
 
         flat_data[card_id]["versions"].append(card_info)
 
