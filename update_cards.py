@@ -220,7 +220,7 @@ def get_set_data(cards):
         set_abbr = card_set["code"]
         
         # The main sets (like SOR, SHD, TWI, etc) all have set numbers that end with a '9', whereas other sets end with something else.
-        if set_number % 10 == 9:
+        if set_number % 10 == 9 or set_number == 61:
             # We only want to add each set once
             if str(set_number) not in sets:
                 sets[str(set_number)] = set_name
