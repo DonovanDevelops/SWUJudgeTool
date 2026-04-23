@@ -94,6 +94,8 @@ variant_order.append("Showcase")
 variant_order.append("Standard Prestige")
 variant_order.append("Foil Prestige")
 variant_order.append("Serialized Prestige")
+variant_order.append("Serialized Prestige - Gold")
+variant_order.append("Serialized Prestige - Rose Gold")
 variant_order.append("Prerelease Promo")
 variant_order.append("Prerelease Judge")
 variant_order.append("OP Promo")
@@ -275,7 +277,7 @@ def get_rule_data(cards, set_numbers):
                 subtitle = data_overrides[card_id_caps]["subtitle"]
         # This is just the best way so far that has been found to get unique versions of cards (like keeping both Darth Maul units separate)
         card_id = f'{card_data["title"]}{" - " + subtitle if subtitle is not None and subtitle != "" else ""}'
-        
+
         # We only care if the card has any additional rulings
         if card_data["rulesStyled"] is not None and card_data["rulesStyled"] != '':
             # And we only care if the card we are looking at is in one of the main sets that we've identified
@@ -336,7 +338,7 @@ def get_flat_data(cards, rules, sets, aspects):
                 subtitle = data_overrides[card_id_caps]["subtitle"]
         
         card_id = f'{card_data["title"]}{" - " + subtitle if subtitle is not None and subtitle != "" else ""}'
-        card_id_caps = card_id.upper()        
+        card_id_caps = card_id.upper()
 
         if card_id not in flat_data:
             flat_data[card_id] = {
@@ -350,6 +352,17 @@ def get_flat_data(cards, rules, sets, aspects):
                 "traits": []
             }
 
+        # Addition for handling the weirdness that is the Serialized Replacements from Secrets of Power
+        if card_data["variantTypes"]["data"] is not None and len(card_data["variantTypes"]["data"]) > 0:
+            variant_name = card_data["variantTypes"]["data"][0]["attributes"]["name"]
+        elif "C_Rose_Gold_" in card_data["artFront"]["data"]["attributes"]["hash"] or "C_Gold_" in card_data["artFront"]["data"]["attributes"]["hash"]:
+            if "C_Rose_Gold_" in card_data["artFront"]["data"]["attributes"]["hash"]:
+                variant_name = "Serialized Prestige - Rose Gold"
+            elif "C_Gold_" in card_data["artFront"]["data"]["attributes"]["hash"]:
+                variant_name = "Serialized Prestige - Gold"
+        else:
+            variant_name = ""
+
         card_info = {
             "set": card_data["expansion"]["data"]["attributes"]["name"],
             "set_number": card_data["expansion"]["data"]["attributes"]["sortValue"],
@@ -360,7 +373,7 @@ def get_flat_data(cards, rules, sets, aspects):
             "back_image": card_data["artBack"]["data"]["attributes"]["formats"]["thumbnail"]["url"] if card_data["artBack"]["data"] is not None and card_data["artBack"]["data"]["attributes"]["formats"]["thumbnail"]["url"] != "" else "",
             "front_orient": card_data["artFrontHorizontal"] if card_data["artFrontHorizontal"] is not None else "",
             "back_orient": card_data["artBackHorizontal"] if card_data["artBackHorizontal"] is not None else "",
-            "variant_name": card_data["variantTypes"]["data"][0]["attributes"]["name"] if card_data["variantTypes"]["data"] is not None and len(card_data["variantTypes"]["data"]) > 0 else "",
+            "variant_name": variant_name
         }
 
         for aspect in card_data["aspects"]["data"]:
